@@ -1,9 +1,5 @@
 @import '~normalize.css';
-@import './robota.css';
-p{
-    color:red;
-    font-family: 'robota', sans-serif;
-}
-.logo{
-    background-image: url('../img/Screenshot_20200907-180315.jpg')
+@import '../fonds/fonds.css';
+body{
+    font-family: Arial, 'Montserrat', sans-serif;
 }

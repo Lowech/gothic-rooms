@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./modules/ass.sass":
-/*!**************************!*\
-  !*** ./modules/ass.sass ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./modules/ass.sass?");
-
-/***/ }),
-
 /***/ "./style/sass.sass":
 /*!*************************!*\
   !*** ./style/sass.sass ***!
@@ -46,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.css */ \"./style/style.css\");\n/* harmony import */ var _style_sass_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/sass.sass */ \"./style/sass.sass\");\n/* harmony import */ var _modules_ass_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/ass.sass */ \"./modules/ass.sass\");\n// подключение к файлу библиотеки jquery\r\n\r\n\r\n\r\nconst title = document.querySelector('p');\r\nconsole.log(title.textContent)\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.css */ \"./style/style.css\");\n/* harmony import */ var _style_sass_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/sass.sass */ \"./style/sass.sass\");\n// подключение к файлу библиотеки jquery\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 

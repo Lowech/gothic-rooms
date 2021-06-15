@@ -349,21 +349,14 @@ template {
 }
 
 @font-face {
-    font-family: 'robota';
-    src: url(beb7fe13e61b9e683c3778a5e2dc4e01.ttf) format('truetype');
+    font-family: 'Montserrat-Regular';
+    src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format('truetype');
 }
-p{
-    color:red;
-    font-family: 'robota', sans-serif;
+body{
+    font-family: Arial, 'Montserrat', sans-serif;
 }
-.logo{
-    background-image: url(588f4ff10de83a2b4c690b01e9afb488.jpg)
-}
+
 .puk {
   font-size: 21px;
   color: blue; }
-
-.yy {
-  opacity: 0.9;
-  color: green; }
 

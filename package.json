@@ -1,7 +1,7 @@
 {
   "name": "wedpack-cource",
   "version": "1.0.0",
-  "description": "",
+  "description": "gothic rooms",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env Node_ENV=development webpack --mode development",

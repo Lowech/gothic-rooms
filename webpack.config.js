@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -32,8 +32,7 @@ module.exports={
     context:path.resolve(__dirname,'src'),//название папки откуда webpack забирает файлы
     mode:'development',//модель сборки webpack, бывает еще production
     entry: { //названия файлов в папке src(от туда webpack их будет забирать)
-        index:'./index.js',
-        output:'./output.js',
+        index:'./index.js'
 },
     output:{//названия файлов  и куда их webpack будет собирать
         filename: '[name].[id].bundle.js',
@@ -53,14 +52,14 @@ module.exports={
             }
         }),
         new CleanWebpackPlugin(),//очищает dist от предыдущих версий файлов
-        new CopyWebpackPlugin(//копирует ico(картинку) 
-            {
-        patterns:[
-                    {
-                from: path.resolve(__dirname, 'src/tree.ico'),//где находится
-                to: path.resolve(__dirname, 'dist')//куда скопировать
-            }],} 
-        ),
+        //new CopyWebpackPlugin(//копирует ico(картинку) 
+        //    {
+        //patterns:[
+         //           {
+         //       from: path.resolve(__dirname, 'src/tree.ico'),//где находится
+        //        to: path.resolve(__dirname, 'dist')//куда скопировать
+        //    }],} 
+        //),
         new MiniCssExtractPlugin({//собирает все файлы css в один
             filename:'[name].[id].bundle.css'
         })
