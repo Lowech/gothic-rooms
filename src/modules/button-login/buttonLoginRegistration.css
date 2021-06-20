@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+}
+
+.button__entrance {
+  width: 87px;
+  height: 34px;
+  border: 2px;
+  border-radius: 22px;
+  border-color: #BC9CFF #8BA4F9;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.button__registration {
+  width: 196px;
+  height: 34px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=buttonLoginRegistration.css.map */
