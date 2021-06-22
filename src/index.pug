@@ -6,7 +6,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-      header.header 
-        include modules/logo/logo.pug
-        include modules/header-nav/nav.pug
-        include modules/button-login/buttonLoginRegistration.pug
+      header.header
+        div.logo-wrapper
+          include modules/logo/logo.pug
+        div.nav-wrapper
+          include modules/header-nav/nav.pug
+        div.button-wrapper
+          include modules/button-login/buttonLoginRegistration.pug

@@ -1,5 +1,10 @@
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url("../fonds/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonds/Montserrat-Regular.woff") format("woff"), url("../fonds/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonds/Montserrat-Bold.woff") format("woff"), url("../fonds/Montserrat-Bold.ttf") format("truetype");
 }
 /*# sourceMappingURL=fonds.css.map */
