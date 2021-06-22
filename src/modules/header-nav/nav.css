@@ -12,14 +12,17 @@
   margin-left: 20px;
   cursor: pointer;
   letter-spacing: 1px;
-  font-stretch: ultra-expanded;
 }
 
 .nav__item_margin-less {
-  margin-left: 6px;
+  margin-left: 7px;
 }
 
 .nav__item_margin-more {
-  margin-left: 29px;
+  margin-left: 28px;
+}
+
+.nav__item_margin {
+  margin-left: 7px;
 }
 /*# sourceMappingURL=nav.css.map */
