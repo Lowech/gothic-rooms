@@ -16,11 +16,14 @@
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 4;
+  padding-top: 2px;
+  margin-left: 2px;
 }
 
 .footer-copyright-wrapper {
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 3;
+  padding-top: 2px;
 }
 /*# sourceMappingURL=footer-full.css.map */

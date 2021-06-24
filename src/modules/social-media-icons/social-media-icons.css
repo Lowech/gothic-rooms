@@ -1,4 +1,25 @@
 .social-media-icons {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 68px;
+}
+
+.twitter-link {
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+.facebook-link {
+  margin-left: 20px;
+}
+
+.instagram-link {
+  margin-left: 22px;
 }
 /*# sourceMappingURL=social-media-icons.css.map */
