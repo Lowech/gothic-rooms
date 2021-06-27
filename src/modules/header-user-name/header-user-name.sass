@@ -1,20 +1,28 @@
-.header
-  display: flex
-  justify-content: space-between
+.header-user-name
+  display: grid
+  grid-template-rows: auto
+  grid-template-columns: 9% 39% 34% 18%
   max-width: 1980px
   min-width: 320px
   background-color: #FFFFFF
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
 .logo-wrapper
-  display: inline-block
-  margin-top: 15px
-  margin-left: 142px
+  grid-column-start: 2
+  grid-column-end: 3
+  padding-top: 16px
+  padding-bottom: 11px
+  margin-left: 12px
 .nav-wrapper
-  display: inline-block
-  margin-top: 27px
-  margin-bottom: 10px
-  margin-left: 420px
+  grid-column-start: 3
+  grid-column-end: 4
+  padding-top: 28px
+  padding-bottom: 11px
+.nav-wrapper__margin-left
+  margin-left: 10px
 .user-name-wrapper
-  display: inline-block
-  margin-top: 20px
-  margin-right: 123px
+  grid-column-start: 4
+  grid-column-end: 5
+  padding-top: 19px
+  padding-bottom: 11px
+.user-name-wrapper__margin-left
+  margin-left: 12px

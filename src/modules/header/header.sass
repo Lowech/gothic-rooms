@@ -1,22 +1,24 @@
 .header
-  display: flex
-  justify-content: space-between
+  display: grid
+  grid-template-rows: auto
+  grid-template-columns: 9% 27% 34% 30%
   max-width: 1980px
   min-width: 320px
   background-color: #FFFFFF
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
 .logo-wrapper
-  display: inline-block
-  margin-top: 15px
-  margin-bottom: 10px
-  margin-left: 142px
+  grid-column-start: 2
+  grid-column-end: 3
+  padding-top: 16px
+  padding-bottom: 11px
+  margin-left: 12px
 .nav-wrapper
-  display: inline-block
-  margin-top: 27px
-  margin-bottom: 10px
-  margin-left: 237px
+  grid-column-start: 3
+  grid-column-end: 4
+  padding-top: 28px
+  padding-bottom: 11px
 .button-wrapper
-  display: inline-block
-  margin-top: 18px
-  margin-bottom: 10px
-  margin-right: 124px
+  grid-column-start: 4
+  grid-column-end: 5
+  padding-top: 19px
+  padding-bottom: 11px
