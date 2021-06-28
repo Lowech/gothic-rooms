@@ -2,7 +2,7 @@
   display: inline-block;
 }
 
-.button_entrance {
+.button__entrance {
   width: 87px;
   height: 34px;
   border: 2px solid;
@@ -20,7 +20,7 @@
   letter-spacing: 0.6px;
 }
 
-.button_registration {
+.button__registration {
   width: 196px;
   height: 34px;
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
