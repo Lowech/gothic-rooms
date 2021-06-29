@@ -1,11 +1,26 @@
+include ../mixin-ul-li/mixin-ul-li.pug
 footer.navigation-footer
   div.footer-logo-title-wrapper
     include ../footer-logo-title/footer-logo-title.pug
   div.footer-navigation-wrapper
-    include ../footer-navigation/footer-navigation.pug
+    ul.list
+      +list__item('index.html','навигация')(class='list__a_color-darker')
+      +list__item('index.html','О нас')(class='list__a')
+      +list__item('index.html',' Новости')(class='list__a')
+      +list__item('index.html','Служба поддержки')(class='list__a')
+      +list__item('index.html','Услуги')(class='list__a')
   div.information-about-us-wrapper
-    include ../footer-information-about-us/information-about-us.pug
+    ul.list
+      +list__item('index.html', 'о нас')(class='list__a_color-darker')
+      +list__item('index.html','О сервисе')(class='list__a')
+      +list__item('index.html','Наша команда')(class='list__a')
+      +list__item('index.html','Вакансии')(class='list__a')
+      +list__item('index.html','Инвесторы')(class='list__a')
   div.support-block-wrapper
-    include ../footer-support/support-block.pug
+    ul.list
+      +list__item('index.html','Служба поддержки')(class='list__a_color-darker')
+      +list__item('index.html','Соглашения')(class='list__a')
+      +list__item('index.html','Сообщества')(class='list__a')
+      +list__item('index.html','Связь с нами')(class='list__a')
   div.footer-subscription-wrapper
     include ../footer-subscription/subscription-block.pug
