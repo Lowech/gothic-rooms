@@ -1,7 +1,10 @@
+include ../mixin-button/mixin-button-narrow.pug
+include ../mixin-button/mixin-button-broad.pug
 header.header
   div.logo-wrapper
     include ../logo/logo.pug
   div.nav-wrapper
     include ../header-nav/nav.pug
   div.button-wrapper
-    include ../button-login/buttonLoginRegistration.pug
+    +button-broad('войти')(class="button-broad")
+    +button-narrow('зарегистрироваться')(class="button-narrow")

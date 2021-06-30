@@ -1,0 +1,21 @@
+.list__item:nth-of-type(n+2) {
+  margin-top: 20px;
+}
+
+.list__a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.list__a_color-darker {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+/*# sourceMappingURL=mixin-ul-li.css.map */
