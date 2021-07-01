@@ -1,0 +1,18 @@
+include ../mixin-input/mixin-input.pug
+include ../mixin-button/mixin-button-narrow.pug
+div.number-selection
+  form
+    div.number-selection-wrapper
+      div.number-selection__title-wrapper
+        h2.number-selection__title Найдём номера под ваши пожелания
+      div.number-selection__input-left-wrapper
+        label(class="number-selection__label" for="") прибытие
+          +input("date" , "ДД.ММ.ГГГГ")(class="input input_width-low") 
+      div.number-selection__input-right-wrapper
+        label(class="number-selection__label" for="") выезд
+          +input("date", "ДД.ММ.ГГГГ")(class="input input_width-low") 
+      div.number-selection__input-lower-wrapper
+        label(class="number-selection__label" for="") гости
+          +input("number", "Сколько гостей")(class="input input_display-block") 
+      div.number-selection__item-button-wrapper
+          +button-narrow('подобрать номер')(class="button-narrow button-narrow_width-big")
