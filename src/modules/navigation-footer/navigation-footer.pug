@@ -1,24 +1,25 @@
 include ../mixin-ul-li/mixin-ul-li.pug
 footer.navigation-footer
   div.footer-logo-title-wrapper
-    include ../footer-logo-title/footer-logo-title.pug
+    include ../logo/logo.pug
+    h2.footer-title Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
   div.footer-navigation-wrapper
     ul.list
-      +list__item('index.html','навигация')(class='list__a_color-darker')
+      li(class='list__item_color-darker') навигация
       +list__item('index.html','О нас')(class='list__a')
       +list__item('index.html',' Новости')(class='list__a')
       +list__item('index.html','Служба поддержки')(class='list__a')
       +list__item('index.html','Услуги')(class='list__a')
   div.information-about-us-wrapper
     ul.list
-      +list__item('index.html', 'о нас')(class='list__a_color-darker')
+      li(class='list__item_color-darker') о нас
       +list__item('index.html','О сервисе')(class='list__a')
       +list__item('index.html','Наша команда')(class='list__a')
       +list__item('index.html','Вакансии')(class='list__a')
       +list__item('index.html','Инвесторы')(class='list__a')
   div.support-block-wrapper
     ul.list
-      +list__item('index.html','Служба поддержки')(class='list__a_color-darker')
+      li(class='list__item_color-darker') Служба поддержки
       +list__item('index.html','Соглашения')(class='list__a')
       +list__item('index.html','Сообщества')(class='list__a')
       +list__item('index.html','Связь с нами')(class='list__a')

@@ -1,6 +1,6 @@
 .subscription-block
   display: flex
-  flex-wrap: wrap
+  flex-direction: column
   width: 280px
 .subscription-block__heading
   font:
@@ -10,6 +10,7 @@
   line-height: 15px
   text-transform: uppercase
   color: #1F2041
+  letter-spacing: 1px
 .subscription-block__text
   font:
     style: normal
@@ -18,20 +19,14 @@
   line-height: 24px
   color: rgba(31, 32, 65, 0.75)
   padding-top: 18px
-.email
-  background: #FFFFFF
-  border: 1px solid rgba(31, 32, 65, 0.25)
-  box-sizing: border-box
-  border-radius: 4px
   width: 260px
-  height: 44px
-  &::placeholder
-    font:
-      style: normal
-      weight: normal
-      size: 14px
-    line-height: 24px
-    color: rgba(31, 32, 65, 0.25)
-    padding-left: 15px
-  &::after  
+  letter-spacing: 1.1px
+.form-input
+  padding-top: 22px 
+  &::after
+    position: relative
     content: url(../src/modules/footer-subscription/img/arrow-forward.png)
+    cursor: pointer
+.form-input::after
+  right: 30px
+  top: 5px
