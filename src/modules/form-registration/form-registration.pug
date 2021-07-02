@@ -1,0 +1,41 @@
+include ../mixin-input/mixin-input.pug
+include ../mixin-button/mixin-button-narrow.pug
+include ../mixin-button/mixin-button-broad.pug
+div.form-registration
+  form
+    div.form-registration__title-wrapper
+      h2.form-registration-title Регистрация аккаунта
+    div.form-registration__input-name-wrapper
+      +input("text" , "Имя")(class="input") 
+    div.form-registration__input-surname-wrapper
+      +input("text" , "Фамилия")(class="input")
+    div.form-registration__input-radio-wrapper
+      input( id="man" type="radio" name="choice")
+      label(for="man") Мужчина
+      input( id="woman" type="radio" name="choice")
+      label(for="woman") Женщина
+    div.form-registration__input-date-wrapper
+      label(for="") дата рождения
+        +input("number" , "ДД.ММ.ГГГГ")(class="input")
+    div.form-registration__input-wrapper
+      label(for="") данные для входа в сервис
+        +input("email" , "Email")(class="input")
+        +input("text" , "Пароль")(class="input")
+    div.form-registration__notifications-wrapper
+      div.radio-block
+        div.radio-block__circle
+      h2.notifications-title Получать спецпредложения
+    div.form-registration__button-narrow-wrapper
+      +button-narrow('зарегистрироваться')(class="button-narrow")
+    div.form-registration__link-wrapper
+      a(href="index.html") Уже есть аккаунт на Toxin
+    div.form-registration__button-broad-wrapper
+      +button-broad('войти')(class="button-broad")
+     
+    
+
+
+    
+
+  
+  
