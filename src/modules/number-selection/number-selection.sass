@@ -18,6 +18,10 @@
   grid-row-end: 2
   grid-column-start: 1  
   grid-column-end: 3
+  padding:
+    top: 28px
+    left: 20px
+    right: 38px
 .number-selection__title
   font:
     style: normal
@@ -25,22 +29,30 @@
     size: 24px
   line-height: 29px
   color: #1F2041
+  letter-spacing: 1.6px
 .number-selection__input-left-wrapper
   grid-row-start: 2
   grid-row-end: 3
   grid-column-start: 1  
   grid-column-end: 2
+  padding:
+    top: 16px
+    left: 20px
   &::before
     position: relative
     content: url(../src/modules/number-selection/img/expand_more.png)
     cursor: pointer
     float: right
-    top: 25px
-    right: 30px
+    top: 34px
+    right: 18px
     z-index: 1
 .input_width-low
   width: 150px
   display: block
+  margin:
+    top: 5px
+  &::placeholder
+    letter-spacing: 0.2px
 .number-selection__label
   font:
     style: normal
@@ -50,46 +62,61 @@
   text-transform: uppercase
   color: #1F2041
   display: block
+  letter-spacing: 0.7px
 .number-selection__input-right-wrapper
   grid-row-start: 2
   grid-row-end: 3
   grid-column-start: 2 
   grid-column-end: 3
+  padding:
+    top: 16px
+    left: 18px
   &::before
     position: relative
     content: url(../src/modules/number-selection/img/expand_more.png)
     cursor: pointer
     float: right
-    top: 25px
-    right: 45px
+    top: 34px
+    right: 35px
     z-index: 1
 .number-selection__input-lower-wrapper
   grid-row-start: 3
   grid-row-end: 4
   grid-column-start: 1 
   grid-column-end: 3
+  padding:
+    top: 8px
+    left: 18px
   &::before
     position: relative
     content: url(../src/modules/number-selection/img/expand_more.png)
     cursor: pointer
     float: right
-    top: 25px
-    right: 45px
+    top: 34px
+    right: 35px
     z-index: 1
 .input_display-block
   display: block
   width: 320px
+  margin:
+    top: 5px
+  &::placeholder
+    letter-spacing: 0.7px
 .number-selection__item-button-wrapper
   grid-row-start: 4
   grid-row-end: 5
   grid-column-start: 1 
   grid-column-end: 3
+  padding:
+    top: 9px
+    left: 18px
   &::after
     position: relative
     content: url(../src/modules/number-selection/img/arrow_forward_white.png)
     cursor: pointer
-    right: 40px
+    right: 31px
     top: 5px
 .button-narrow_width-big
   width: 320px 
+  height: 44px
 
