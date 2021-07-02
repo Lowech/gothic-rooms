@@ -8,11 +8,10 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
   border-radius: 4px
 .number-selection-wrapper
-  width: 380px
   height: 374px
   display: grid
   grid-template-rows: 25% 25% 25% 25%
-  grid-template-columns: 50% 50%
+  grid-template-columns: 48% 52%
   padding: 10px
 .number-selection__title-wrapper
   grid-row-start: 1
@@ -31,8 +30,17 @@
   grid-row-end: 3
   grid-column-start: 1  
   grid-column-end: 2
+  &::before
+    position: relative
+    content: url(../src/modules/number-selection/img/expand_more.png)
+    cursor: pointer
+    float: right
+    top: 25px
+    right: 30px
+    z-index: 1
 .input_width-low
   width: 150px
+  display: block
 .number-selection__label
   font:
     style: normal
@@ -47,11 +55,27 @@
   grid-row-end: 3
   grid-column-start: 2 
   grid-column-end: 3
+  &::before
+    position: relative
+    content: url(../src/modules/number-selection/img/expand_more.png)
+    cursor: pointer
+    float: right
+    top: 25px
+    right: 45px
+    z-index: 1
 .number-selection__input-lower-wrapper
   grid-row-start: 3
   grid-row-end: 4
   grid-column-start: 1 
   grid-column-end: 3
+  &::before
+    position: relative
+    content: url(../src/modules/number-selection/img/expand_more.png)
+    cursor: pointer
+    float: right
+    top: 25px
+    right: 45px
+    z-index: 1
 .input_display-block
   display: block
   width: 320px
@@ -60,6 +84,12 @@
   grid-row-end: 5
   grid-column-start: 1 
   grid-column-end: 3
+  &::after
+    position: relative
+    content: url(../src/modules/number-selection/img/arrow_forward_white.png)
+    cursor: pointer
+    right: 40px
+    top: 5px
 .button-narrow_width-big
   width: 320px 
 
