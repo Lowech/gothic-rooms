@@ -2,6 +2,7 @@ include mixin-button-click-me/button-click-me.pug
 include mixin-button-click-background/mixin-button-click-background.pug
 include mixin-click-me/mixin-click-me.pug
 include mixin-wide-button/mixin-wide-button.pug
+include mixin-checkbox-buttons/mixin-checkbox-buttons.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
 div.button-click-background-wrapper
@@ -12,3 +13,7 @@ div.button-click-background-wrapper.button-click-background_opacity
 +click-me('index.html', 'CLICK ME')(class="click-me click-me_color")
 +wide-button('перейти к оплате')(class="wide-button")
 include pagination/pagination.pug
+include range-slider/range-slider.pug
++checkbox-buttons("Можно курить")(class="checkbox-label")
++checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
++checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
