@@ -1,5 +1,5 @@
 include ../mixin-input/mixin-input.pug
-include ../mixin-button/mixin-button-narrow.pug
+include ../mixin-wide-button/mixin-wide-button.pug
 div.number-selection
   form
     div.number-selection-wrapper
@@ -15,4 +15,4 @@ div.number-selection
         label(class="number-selection__label" for="") гости
           +input("number", "Сколько гостей")(class="input input_display-block") 
       div.number-selection__item-button-wrapper
-          +button-narrow('подобрать номер')(class="button-narrow button-narrow_width-big")
+          +wide-button('подобрать номер')(class="wide-button")
