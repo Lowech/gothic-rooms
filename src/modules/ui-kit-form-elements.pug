@@ -3,11 +3,13 @@ include mixin-button-click-background/mixin-button-click-background.pug
 include mixin-click-me/mixin-click-me.pug
 include mixin-wide-button/mixin-wide-button.pug
 include mixin-checkbox-buttons/mixin-checkbox-buttons.pug
+include mixin-input-wide-field/mixin-input-wide-field.pug
+include mixin-date-dropdown/mixin-date-dropdown.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
-div.button-click-background-wrapper
+div.button-click-background-wrapper <!--при экспорте на страницу забрать вместе с button-->
   +button-click-background('CLICK ME')(class="button-click-background")
-div.button-click-background-wrapper.button-click-background_opacity
+div.button-click-background-wrapper.button-click-background_opacity  <!--при экспорте на страницу забрать вместе с button-->
   +button-click-background('CLICK ME')(class="button-click-background")
 +click-me('index.html', 'CLICK ME')(class="click-me")
 +click-me('index.html', 'CLICK ME')(class="click-me click-me_color")
@@ -17,3 +19,10 @@ include range-slider/range-slider.pug
 +checkbox-buttons("Можно курить")(class="checkbox-label")
 +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
 +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
++input-wide-field("Email","Email")(class="input-wide-field")
++input-wide-field("text","This is pretty awesome")(class="input-wide-field")
+div.input-arrow-block <!--при экспорте на страницу забрать вместе с input-->
+  +input-wide-field("number","Сколько гостей")(class="input-wide-field")
++input-wide-field("number","ДД.ММ.ГГГГ")(class="input-wide-field")
++date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown")
++date-dropdown("number", "19.08.2019")(class="date-dropdown") 
