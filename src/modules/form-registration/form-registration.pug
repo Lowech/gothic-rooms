@@ -1,36 +1,36 @@
-include ../mixin-input/mixin-input.pug
+include ../mixin-input-wide-field/mixin-input-wide-field.pug
 include ../mixin-wide-button/mixin-wide-button.pug
-include ../mixin-button/mixin-button-broad.pug
+include ../mixin-button-click-background/mixin-button-click-background.pug
+include ../mixin-radio-buttons/radio-buttons.pug
 div.form-registration
   form
     div.form-registration__title-wrapper
       h2.form-registration-title Регистрация аккаунта
-    div.form-registration__input-name-wrapper
-      +input("text" , "Имя")(class="input") 
-    div.form-registration__input-surname-wrapper
-      +input("text" , "Фамилия")(class="input")
-    div.form-registration__input-radio-wrapper
-      input( id="man" type="radio" name="choice")
-      label(for="man") Мужчина
-      input( id="woman" type="radio" name="choice")
-      label(for="woman") Женщина
-    div.form-registration__input-date-wrapper
+    div.input-name-wrapper
+      +input-wide-field("text" , "Имя")(class="input-wide-field") 
+    div.input-surname-wrapper
+      +input-wide-field("text" , "Фамилия")(class="input-wide-field")
+    div.input-radio-wrapper
+      +radio-buttons("Мужчина", "man","man")(class="radio-buttons radio-buttons_color-black")
+      +radio-buttons("Женщина", "woman","woman")(class="radio-buttons")
+    div.input-date-wrapper
       label(for="") дата рождения
-        +input("number" , "ДД.ММ.ГГГГ")(class="input")
-    div.form-registration__input-wrapper
+        +input-wide-field("number" , "ДД.ММ.ГГГГ")(class="input-wide-field")
+    div.input-login-wrapper
       label(for="") данные для входа в сервис
-        +input("email" , "Email")(class="input")
-        +input("text" , "Пароль")(class="input")
-    div.form-registration__notifications-wrapper
+        +input-wide-field("email" , "Email")(class="input-wide-field")
+        +input-wide-field("text" , "Пароль")(class="input-wide-field")
+    div.notifications-wrapper
       div.radio-block
         div.radio-block__circle
       h2.notifications-title Получать спецпредложения
-    div.form-registration__button-narrow-wrapper
+    div.button-narrow-wrapper
       +wide-button('зарегистрироваться')(class="wide-button")
     div.form-registration__link-wrapper
       a(href="index.html") Уже есть аккаунт на Toxin
-    div.form-registration__button-broad-wrapper
-      +button-broad('войти')(class="button-broad")
+    div.button-broad-wrapper
+      div.button-click-background-wrapper.button-click-background_opacity
+        +button-click-background('войти')(class="button-click-background")
      
     
 

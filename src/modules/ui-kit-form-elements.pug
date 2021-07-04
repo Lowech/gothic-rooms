@@ -5,6 +5,7 @@ include mixin-wide-button/mixin-wide-button.pug
 include mixin-checkbox-buttons/mixin-checkbox-buttons.pug
 include mixin-input-wide-field/mixin-input-wide-field.pug
 include mixin-date-dropdown/mixin-date-dropdown.pug
+include mixin-radio-buttons/radio-buttons.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
 div.button-click-background-wrapper <!--при экспорте на страницу забрать вместе с button-->
@@ -25,4 +26,10 @@ div.input-arrow-block <!--при экспорте на страницу забр
   +input-wide-field("number","Сколько гостей")(class="input-wide-field")
 +input-wide-field("number","ДД.ММ.ГГГГ")(class="input-wide-field")
 +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown")
-+date-dropdown("number", "19.08.2019")(class="date-dropdown") 
++date-dropdown("number", "19.08.2019")(class="date-dropdown")
++radio-buttons("Мужчина", "man","man")(class="radio-buttons radio-buttons_color-black")
++radio-buttons("Женщина", "woman","woman")(class="radio-buttons")
+include toggle/toggle.pug
+include like-button/like-button.pug
+include bullet-list/bullet-list.pug
+include expandable-checkbox-list/expandable-checkbox-list.pug
