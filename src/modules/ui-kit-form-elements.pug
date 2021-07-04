@@ -6,6 +6,9 @@ include mixin-checkbox-buttons/mixin-checkbox-buttons.pug
 include mixin-input-wide-field/mixin-input-wide-field.pug
 include mixin-date-dropdown/mixin-date-dropdown.pug
 include mixin-radio-buttons/radio-buttons.pug
+include mixin-room-details/mixin-room-details.pug
+include mixin-input-narrow-field/mixin-input-narrow-field.pug
+include mixin-rate-button/rate-button.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
 div.button-click-background-wrapper <!--при экспорте на страницу забрать вместе с button-->
@@ -30,6 +33,16 @@ div.input-arrow-block <!--при экспорте на страницу забр
 +radio-buttons("Мужчина", "man","man")(class="radio-buttons radio-buttons_color-black")
 +radio-buttons("Женщина", "woman","woman")(class="radio-buttons")
 include toggle/toggle.pug
+include toggle/faint-copy-toggle.pug
 include like-button/like-button.pug
+include like-button/faint-copy-like-button.pug
 include bullet-list/bullet-list.pug
 include expandable-checkbox-list/expandable-checkbox-list.pug
+include rich-heckbox-buttons/rich-heckbox-buttons.pug
++room-details("src/modules/mixin-room-details/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
++room-details("src/modules/mixin-room-details/img/location_city.png", "Комфорт","Шумопоглощающие стены")
+include reviews-block/reviews-block.pug
++input-narrow-field("email", "Email")(class="narrow-field-block__input narrow-field-block__input_width-more")
+include filter-date-dropdown-input/filter-date-dropdown.pug
++rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
++rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png")
