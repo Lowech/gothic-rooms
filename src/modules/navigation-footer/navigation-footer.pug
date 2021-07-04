@@ -1,4 +1,5 @@
 include ../mixin-ul-li/mixin-ul-li.pug
+include ../mixin-input-narrow-field/mixin-input-narrow-field.pug
 footer.navigation-footer
   div.footer-logo-title-wrapper
     include ../logo/logo.pug
@@ -24,4 +25,8 @@ footer.navigation-footer
       +list__item('index.html','Сообщества')(class='list__a')
       +list__item('index.html','Связь с нами')(class='list__a')
   div.footer-subscription-wrapper
-    include ../footer-subscription/subscription-block.pug
+    div.subscription-block
+      span.subscription-block__heading Подписка
+      span.subscription-block__text Получайте специальные предложения и новости сервиса
+      form(class="form-input" action="")
+        +input-narrow-field("email", "Email")(class="narrow-field-block__input")

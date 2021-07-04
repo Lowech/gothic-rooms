@@ -1,4 +1,5 @@
-include ../mixin-input/mixin-input.pug
+include ../mixin-input-wide-field/mixin-input-wide-field.pug
+include ../mixin-date-dropdown/mixin-date-dropdown.pug
 include ../mixin-wide-button/mixin-wide-button.pug
 div.number-selection
   form
@@ -6,13 +7,14 @@ div.number-selection
       div.number-selection__title-wrapper
         h2.number-selection__title Найдём номера под ваши пожелания
       div.number-selection__input-left-wrapper
-        label(class="number-selection__label" for="") прибытие
-          +input("number" , "ДД.ММ.ГГГГ")(class="input input_width-low") 
+        label(class="number-selection__label" ) прибытие
+        +date-dropdown("number" , "ДД.ММ.ГГГГ")(class="date-dropdown") 
       div.number-selection__input-right-wrapper
-        label(class="number-selection__label" for="") выезд
-          +input("number", "ДД.ММ.ГГГГ")(class="input input_width-low") 
+        label(class="number-selection__label" ) выезд
+        +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown") 
       div.number-selection__input-lower-wrapper
-        label(class="number-selection__label" for="") гости
-          +input("number", "Сколько гостей")(class="input input_display-block") 
+        label(class="number-selection__label" ) гости
+        div.input-arrow-block
+          +input-wide-field("number", "Сколько гостей")(class="input-wide-field") 
       div.number-selection__item-button-wrapper
           +wide-button('подобрать номер')(class="wide-button")
