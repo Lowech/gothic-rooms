@@ -14,7 +14,6 @@ div.number-selection
         +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown") 
       div.number-selection__input-lower-wrapper
         label(class="number-selection__label" ) гости
-        div.input-arrow-block
-          +input-wide-field("number", "Сколько гостей")(class="input-wide-field") 
+        include ../dropdown-wide/dropdown-wide.pug
       div.number-selection__item-button-wrapper
           +wide-button('подобрать номер')(class="wide-button")

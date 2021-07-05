@@ -25,8 +25,8 @@ include range-slider/range-slider.pug
 +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
 +input-wide-field("Email","Email")(class="input-wide-field")
 +input-wide-field("text","This is pretty awesome")(class="input-wide-field")
-div.input-arrow-block <!--при экспорте на страницу забрать вместе с input-->
-  +input-wide-field("number","Сколько гостей")(class="input-wide-field")
+include dropdown-wide/dropdown-wide.pug
+include dropdown-wide/dropdown-wide-table.pug
 +input-wide-field("number","ДД.ММ.ГГГГ")(class="input-wide-field")
 +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown")
 +date-dropdown("number", "19.08.2019")(class="date-dropdown")
@@ -46,3 +46,5 @@ include reviews-block/reviews-block.pug
 include filter-date-dropdown-input/filter-date-dropdown.pug
 +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
 +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png")
+include dropdown-less/dropdown-less.pug
+include dropdown-less/dropdown-less-table.pug

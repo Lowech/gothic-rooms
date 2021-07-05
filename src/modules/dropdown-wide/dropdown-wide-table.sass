@@ -1,0 +1,72 @@
+.dropdown-wide
+  display: inline-block
+  position: relative
+  &::after
+    content: url(../src/modules/mixin-input-wide-field/img/expand_more.png)
+    position: absolute
+    cursor: pointer
+    right: 20px
+    top: 15px
+.dropdown-wide__input
+  width: 320px
+  height: 44px
+  background: #FFFFFF
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  color: rgba(31, 32, 65, 0.75)
+  outline: none
+  &::placeholder
+    color: rgba(31, 32, 65, 0.25)
+.dropdown-wide__input_border-bottom
+  border-radius: 0px
+  border-top-right-radius: 4px
+  border-top-left-radius: 4px
+  border: 1px solid rgba(31, 32, 65, 0.5)
+.dropdown-wide__table
+  width: 320px
+  height: 159px
+  background: #FFFFFF
+  border: 1px solid rgba(31, 32, 65, 0.5)
+  box-sizing: border-box
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+.dropdown-wide__item
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+.dropdown-wide__title,.dropdown-wide__number
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1F2041
+.dropdown-wide__circle
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 30px
+  height: 30px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 22px
+.dropdown-wide__hidden-block
+  display: flex
+  justify-content: space-between
+.dropdown-wide__clear
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #BC9CFF
+.dropdown-wide__apply
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #BC9CFF
+  text-align: center
