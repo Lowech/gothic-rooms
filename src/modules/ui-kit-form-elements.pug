@@ -9,6 +9,7 @@ include mixin-radio-buttons/radio-buttons.pug
 include mixin-room-details/mixin-room-details.pug
 include mixin-input-narrow-field/mixin-input-narrow-field.pug
 include mixin-rate-button/rate-button.pug
+include mixin-bullet-list/bullet-list.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
 div.button-click-background-wrapper <!--при экспорте на страницу забрать вместе с button-->
@@ -36,7 +37,10 @@ include toggle/toggle.pug
 include toggle/faint-copy-toggle.pug
 include like-button/like-button.pug
 include like-button/faint-copy-like-button.pug
-include bullet-list/bullet-list.pug
+ul.wrapper
+  +bullet-list("Нельзя с питомцами")(class="bullet-list")
+  +bullet-list("Без вечеринок и мероприятий")(class="bullet-list")
+  +bullet-list("Время прибытия — после 13:00,а выезд до 12:00")(class="bullet-list")
 include expandable-checkbox-list/expandable-checkbox-list.pug
 include rich-heckbox-buttons/rich-heckbox-buttons.pug
 +room-details("src/modules/mixin-room-details/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
@@ -48,3 +52,10 @@ include filter-date-dropdown-input/filter-date-dropdown.pug
 +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png")
 include dropdown-less/dropdown-less.pug
 include dropdown-less/dropdown-less-table.pug
+include card-slider/card-slider.pug
+include block-cancel/block-cancel.pug
+ul.wrapper
+  +bullet-list("Великолепно")(class="bullet-list")
+  +bullet-list("Хорошо")(class="bullet-list")
+  +bullet-list("Удовлетворительно")(class="bullet-list")
+  +bullet-list("Разочарован")(class="bullet-list")
