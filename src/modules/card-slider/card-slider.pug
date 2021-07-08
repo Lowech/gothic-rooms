@@ -1,19 +1,18 @@
 include ../mixin-number-reviews/mixin-number-reviews.pug
 div.card-slider
   div.card-slider__img-wrapper
+    ul.card-slider__cicle-wrapper
+      li.card-slider__cicle
+      li.card-slider__cicle
+      li.card-slider__cicle
+      li.card-slider__cicle
     img.card-slider__img( src="./src/modules/card-slider/img/card-image.jpg" alt="img")
     img.card-slider__img( src="./src/modules/card-slider/img/card-image2.jpg" alt="img")
     img.card-slider__img( src="" alt="img")
     img.card-slider__img( src="" alt="img")
-    div.card-slider__cicle-wrapper
-      div.card-slider__cicle1
-      div.card-slider__cicle2
-      div.card-slider__cicle3
-      div.card-slider__cicle4
   div.card-slider__characteristics-wrapper
     span.card-slider__number № 840
-    span.card-slider__category
     span.card-slider__sum 9 900₽ в сутки
   div.card-slider__reviews-wrapper
     +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
-    +number-reviews("65", "Отзывов")  
+    +number-reviews("65", "Отзывов")
