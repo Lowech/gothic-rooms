@@ -1,7 +1,14 @@
+include ../mixin-bullet-list/bullet-list.pug
 div.impressions-room
-  h2.impressions-room__title
-  div.diagram-wrapper
-    canvas 
-  div.diagram__appraisal
+  h2.impressions-room__title Впечатления от номера
+  div.diagram
+    div.diagram__value
+      span.diagram__number 260
+      span.diagram__text голосов
+    canvas.diagram__chart
+  div.impressions-room__appraisal
     ul 
-      li
+      +bullet-list("Великолепно")(class="bullet-list bullet-list_marker-color-peach")
+      +bullet-list("Хорошо")(class="bullet-list bullet-list_marker-color-green")
+      +bullet-list("Удовлетворительно")(class="bullet-list bullet-list_marker-color-purple")
+      +bullet-list("Разочарован")(class="bullet-list bullet-list_marker-color-black")

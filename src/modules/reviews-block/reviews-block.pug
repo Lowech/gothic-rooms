@@ -1,7 +1,10 @@
 include ../mixin-room-details/mixin-room-details.pug
+include ../mixin-number-reviews/mixin-number-reviews.pug
 div.reviews-block
   div.reviews-block__wrapper
     +room-details("src/modules/reviews-block/img/image-user1.jpg", "Мурад Сарафанов","5 дней назад")
+  div.reviews-block__number
+    +number-reviews("2", "Отзыва")
   div.reviews-block__like
     include ../like-button/like-button.pug
   div.reviews-block__text

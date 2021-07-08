@@ -1,3 +1,4 @@
+include ../mixin-number-reviews/mixin-number-reviews.pug
 div.card-slider
   div.card-slider__img-wrapper
     img.card-slider__img( src="./src/modules/card-slider/img/card-image.jpg" alt="img")
@@ -15,4 +16,4 @@ div.card-slider
     span.card-slider__sum 9 900₽ в сутки
   div.card-slider__reviews-wrapper
     +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
-    span.card-slider__number-reviews 65 Отзывов
+    +number-reviews("65", "Отзывов")  

@@ -1,0 +1,70 @@
+.impressions-room
+  display: grid
+  grid-template-columns: 50% 50%
+  grid-template-rows: 20% 80%
+  width: 300px
+.impressions-room__title
+  grid-row-start: 1
+  grid-row-end: 2
+  grid-column-start: 1
+  grid-column-end: 3
+  font:
+    style: normal
+    weight: bold
+    size: 19px
+  line-height: 23px
+  color: #1F2041
+.diagram
+  display: inline-block
+  position: relative
+  grid-row-start: 2
+  grid-row-end: 3
+  grid-column-start: 1
+  grid-column-end: 2
+.diagram__value
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 30px
+  left: 30px
+.diagram__number
+  text-align: center
+  font:
+    style: normal
+    weight: bold
+    size: 24px
+  line-height: 29px
+  color: #BC9CFF
+.diagram__text
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #BC9CFF
+.diagram__chart
+  width: 120px
+  height: 120px
+
+.impressions-room__appraisal
+  grid-row-start: 2
+  grid-row-end: 3
+  grid-column-start: 2
+  grid-column-end: 3
+.bullet-list_marker-color-peach::before 
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent 
+.bullet-list_marker-color-green::before 
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent 
+.bullet-list_marker-color-purple::before 
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent 
+.bullet-list_marker-color-black::before 
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent 
