@@ -12,9 +12,12 @@
   color: #FFFFFF
   letter-spacing: 0.8px
   border: none
-.wide-button-block::after
+.wide-button-block
+  display: inline-block
   position: relative
+.wide-button-block::after
+  position: absolute
   content: url(../src/modules/mixin-wide-button/img/arrow_forward_white.png)
   cursor: pointer
-  right: 31px
-  top: 5px
+  right: 15px
+  top: 12px

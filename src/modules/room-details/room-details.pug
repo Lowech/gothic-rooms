@@ -7,11 +7,16 @@ div.room-details-wrapper
     img.room-details__img2(src="./src/modules/room-details/img/room-details-image2.jpg" alt="img")
     img.room-details__img3(src="./src/modules/room-details/img/room-details-image3.jpg" alt="img")
   main.room-details-info 
-    div.room-details-info__block-room-details
-      h2.room-details-info Сведения о номере
+    div.room-details-info__wrapper-room-details
+      h2.room-details-info__title Сведения о номере
       +room-details("src/modules/mixin-room-details/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
       +room-details("src/modules/mixin-room-details/img/location_city.png", "Удобство","Окно в каждой из спален")
-      +room-details("src/modules/mixin-room-details/img/location_city.png", "Удобство","Окно в каждой из спален")
+      +room-details("src/modules/mixin-room-details/img/whatshot.png", "Уют","Номер оснащён камином")
+    div.room-details-info__wrapper-impressions-room
+      h2.room-details-info__title Впечатления от номера
+      include ../impressions-room/impressions-room.pug
+    div.room-details-info__wrapper-form-number-selection-total.pug
+      include ../form-number-selection-total/form-number-selection-total-copy.pug
 footer.room-details-navigation-footer-wrapper
   include ../navigation-footer/navigation-footer.pug
 footer.room-details-footer-full-wrapper

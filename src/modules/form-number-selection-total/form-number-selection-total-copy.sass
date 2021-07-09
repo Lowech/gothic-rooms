@@ -1,0 +1,256 @@
+.number-selection-copy
+  display: inline-block
+  width: 380px
+  height: 512px
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  box-sizing: border-box
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
+  border-radius: 4px
+.number-selection-wrapper-copy
+  height: 374px
+  display: grid
+  grid-template-columns: 8% 44% 44%
+  grid-template-rows:  repeat(27, 5%)
+
+.room-number-rate-wrapper
+  grid-column-start: 2  
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 4
+  display: flex
+  justify-content: space-between
+.room-number
+  grid-column-start: 2  
+  grid-column-end: 3
+  grid-row-start: 3
+  grid-row-end: 4
+.room-number__sign
+  font:
+    style: normal
+    weight: bold
+    size: 14px
+  line-height: 17px
+  color: #1F2041
+.room-number__number
+  font:
+    style: normal
+    weight: 800
+    size: 24px
+  line-height: 30px
+  color: #1F2041
+  letter-spacing: 0.4px
+.room-number__category
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #BC9CFF
+  letter-spacing: 0.5px
+  padding-left: 8px
+  vertical-align: bottom
+
+.room-rate
+  grid-column-start: 3  
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 4
+  padding:
+    top: 11px
+    right: 14px
+  
+.room-rate__sum
+  font:
+    style: normal
+    weight: bold
+    size: 14px
+  line-height: 18px
+  color: rgba(31, 32, 65, 0.5)
+  letter-spacing: 0.7px
+.room-rate__title
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 14px
+  color: rgba(31, 32, 65, 0.25)
+  letter-spacing: 0.7px
+
+.number-selection__input-left-wrapper-copy
+  grid-column-start: 2 
+  grid-column-end: 3
+  grid-row-start: 5
+  grid-row-end: 6
+  padding:
+    top: 14px
+    
+.number-selection__label-copy
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1F2041
+  display: block
+  letter-spacing: 0.6px
+  padding-bottom: 5px
+.number-selection__input-right-wrapper-copy
+  grid-column-start: 3  
+  grid-column-end: 4
+  grid-row-start: 5
+  grid-row-end: 6
+  padding:
+    top: 14px
+    left: 2px
+    
+.number-selection__input-lower-wrapper-copy
+  grid-column-start: 2  
+  grid-column-end: 3
+  grid-row-start: 9
+  grid-row-end: 10
+  padding:
+    top: 24px
+    
+.room-charge
+  grid-column-start: 2  
+  grid-column-end: 4
+  grid-row-start: 16
+  grid-row-end: 21
+  padding:
+    top: 15px
+  display: flex
+  justify-content: space-around
+  flex-direction: column
+
+.number-amount
+  display: flex
+  justify-content: space-between
+.number-amount__total-number
+  display: inline-block
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+.number-amount__multiplied-sum-number
+  display: inline-block
+  padding-right: 16px
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+
+.service-charge
+  display: flex
+  justify-content: space-between
+  padding:
+    top: 9px
+.service-charge__text
+  display: inline-block
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+.service-charge__info
+  display: inline-block
+  border-radius: 50%
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  width: 20px
+  height: 20px
+  box-sizing: border-box
+  margin-right: 58px
+.service-charge__sign
+  padding-left: 7px
+.service-charge__sum
+  display: inline-block
+  padding-right: 16px
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+.additional-services
+  display: flex
+  justify-content: space-between
+  padding:
+    top: 15px
+.additional-services__text
+  display: inline-block
+  width: 190px
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 17px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+.additional-services__info
+  display: inline-block
+  border-radius: 50%
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  width: 20px
+  height: 20px
+  box-sizing: border-box
+  margin-right: 15px
+.additional-services__sign
+  padding-left: 7px
+.additional-services__sum
+  display: inline-block
+  padding-right: 16px
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  color: rgba(31, 32, 65, 0.75)
+  letter-spacing: 0.7px
+
+.total-number
+  display: flex
+  justify-content: space-between
+  padding:
+    top: 30px
+.total-number__text 
+  display: inline-block
+  font:
+    style: normal
+    weight: bold
+    size: 19px
+  line-height: 23px
+  color: #1F2041
+  letter-spacing: 1px
+.total-number__border
+  display: inline-block
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25)
+  width: 183px
+  margin-bottom: 4px
+.total-number__sum
+  display: inline-block
+  font:
+    style: normal
+    weight: bold
+    size: 19px
+  line-height: 23px
+  color: #1F2041
+  letter-spacing: 0.8px
+  padding-right: 16px
+.number-selection__item-button-wrapper-copy
+  grid-column-start: 2
+  grid-column-end: 4
+  grid-row-start: 24
+  grid-row-end: 26
+  padding:
+    top: 6px
+    
