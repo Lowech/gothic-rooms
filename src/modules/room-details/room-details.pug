@@ -1,0 +1,18 @@
+include ../mixin-room-details/mixin-room-details.pug
+div.room-details-header-wrapper
+  include ../header/header.pug
+div.room-details-wrapper
+  div.room-details-background
+    img.room-details__img1(src="./src/modules/room-details/img/room-details-image1.jpg" alt="img")
+    img.room-details__img2(src="./src/modules/room-details/img/room-details-image2.jpg" alt="img")
+    img.room-details__img3(src="./src/modules/room-details/img/room-details-image3.jpg" alt="img")
+  main.room-details-info 
+    div.room-details-info__block-room-details
+      h2.room-details-info Сведения о номере
+      +room-details("src/modules/mixin-room-details/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
+      +room-details("src/modules/mixin-room-details/img/location_city.png", "Удобство","Окно в каждой из спален")
+      +room-details("src/modules/mixin-room-details/img/location_city.png", "Удобство","Окно в каждой из спален")
+footer.room-details-navigation-footer-wrapper
+  include ../navigation-footer/navigation-footer.pug
+footer.room-details-footer-full-wrapper
+  include ../footer-full/footer-full.pug

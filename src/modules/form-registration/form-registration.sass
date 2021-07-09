@@ -1,5 +1,7 @@
 .form-registration
-  display: inline-block
+  display: grid
+  grid-template-columns: 8% 92%
+  grid-template-rows: repeat(20, 5%)
   width: 380px
   height: 646px
   background: #FFFFFF
@@ -7,3 +9,104 @@
   box-sizing: border-box
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
   border-radius: 4px
+
+.form-registration__title-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 2
+  grid-row-end: 3
+  padding:
+    top: 7px
+.form-registration-title
+  font:
+    style: normal
+    weight: bold
+    size: 24px
+  line-height: 29px
+  letter-spacing: 1.6px
+  color: #1F2041
+
+.input-name-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 3
+  grid-row-end: 4
+  padding:
+    top: 24px
+
+.input-surname-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 5
+  grid-row-end: 6
+  padding:
+    top: 14px
+.input-radio-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 7
+  grid-row-end: 8
+
+.input-date-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 8
+  grid-row-end: 9
+  padding:
+    top: 14px
+.input-date__label
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  letter-spacing: 0.8px
+  text-transform: uppercase
+  color: #1F2041
+.input-wide-field_padding-top
+  margin:
+    top: 4px
+.input-login-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 11
+  grid-row-end: 12
+  padding:
+    top: 2px
+.input-wide-field_padding-top-more
+  margin:
+    top: 10px
+.notifications-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 15
+  grid-row-end: 16
+
+.form-registration__button-narrow-wrapper
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 16
+  grid-row-end: 17
+  padding:
+    top: 14px
+    
+.form-registration__footer
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 18
+  grid-row-end: 19
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 92px
+.form-registration__link
+  font:
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 18px
+  letter-spacing: 0.7px
+  color: #000000
+.form-registration__button-wrapper
+  padding:
+    right: 28px
