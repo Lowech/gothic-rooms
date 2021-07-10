@@ -4,7 +4,8 @@ include ../mixin-number-reviews/mixin-number-reviews.pug
 include ../mixin-like-button/mixin-like-button.pug
 include ../mixin-review/mixin-review.pug
 include ../mixin-bullet-list/bullet-list.pug
-div.room-details-header-wrapper
+include ../mixin-user-name-picture/mixin-user-name-picture.pug
+header.room-details-header-wrapper
   include ../header/header.pug
 div.room-details-wrapper
   div.room-details-background
@@ -21,36 +22,37 @@ div.room-details-wrapper
       div.room-details-block3
         +room-details("src/modules/mixin-room-details/img/whatshot.png", "Уют","Номер оснащён камином")
     div.room-details-info__wrapper-impressions-room
-      h2.room-details-info__title Впечатления от номера
+      h2.room-details-info__title.room-details-info__title-padding-left Впечатления от номера
       include ../impressions-room/impressions-room.pug
     div.room-details-info__wrapper-form-number-selection-total
       include ../form-number-selection-total/form-number-selection-total-copy.pug
     div.room-details-info__reviews-block
-      h2.room-details-info__title Отзывы посетителей номера
-      div.reviews__wrapper
-        +room-details("src/modules/reviews-block/img/image-user1.jpg", "Мурад Сарафанов","5 дней назад")
-      div.reviews__number
-        +number-reviews("2", "Отзыва")
-      div.reviews__like
-        +like-button("./src/modules/mixin-like-button/img/favorite.png", 12)
-      div.reviews__text
-        +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
-      div.reviews__wrapper
-        +room-details("src/modules/reviews-block/img/image-user1.jpg", "Мурад Сарафанов","5 дней назад")
-      div.reviews__number
-        +number-reviews("2", "Отзыва")
-      div.reviews__like
-        +like-button("./src/modules/mixin-like-button/img/favorite.png", 12)
-      div.reviews__text
-        +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+      div.room-details-info__title_padding-left
+        h2.room-details-info__title Отзывы посетителей номера
+        div.reviews__number-wrapper
+          +number-reviews("2", "отзыва")
+      div.room-details-info__reviews-block-grid
+        div.reviews__wrapper
+          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user1.jpg", "Мурад Сарафанов","5 дней назад")
+        div.reviews__like-wrapper
+          +like-button("./src/modules/mixin-like-button/img/favorite.png", 12)
+        div.reviews__text-wrapper
+          +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+      div.room-details-info__reviews-block-grid
+        div.reviews__wrapper
+          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user2.jpg", "Патрисия Стёклышкова","Неделю назад")
+        div.reviews__like-wrapper
+          include ../mixin-like-button/faint-copy-like-button.pug
+        div.reviews__text-wrapper
+          +review("Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
     div.room-details-info__wrapper-bullet-list
-      h2.room-details-info__title Правила
-      ul
-        +bullet-list("Нельзя с питомцами")(class="bullet-list")
-        +bullet-list("Без вечеринок и мероприятий")(class="bullet-list")
-        +bullet-list("Время прибытия — после 13:00,а выезд до 12:00")(class="bullet-list")
+      h2.room-details-info__title.room-details-info__title_bullet-list-padding-left Правила
+      ul.wrapper-bullet-list
+        +bullet-list("Нельзя с питомцами")(class="bullet-list bullet-list_padding-top")
+        +bullet-list("Без вечеринок и мероприятий")(class="bullet-list bullet-list_padding-top")
+        +bullet-list("Время прибытия — после 13:00,а выезд до 12:00")(class="bullet-list bullet-list_padding-top")
     div.room-details-info__wrapper-block-cancel
-      h2.room-details-info__title Отмена
+      h2.room-details-info__title.room-details-info__title_padding-bottom Отмена
       include ../block-cancel/block-cancel.pug
 footer.room-details-navigation-footer-wrapper
   include ../navigation-footer/navigation-footer.pug
