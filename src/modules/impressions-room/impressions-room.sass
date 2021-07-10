@@ -1,19 +1,9 @@
 .impressions-room
   display: grid
-  grid-template-columns: 50% 50%
+  grid-template-columns: 49% 51%
   grid-template-rows: 20% 80%
   width: 300px
-.impressions-room__title
-  grid-row-start: 1
-  grid-row-end: 2
-  grid-column-start: 1
-  grid-column-end: 3
-  font:
-    style: normal
-    weight: bold
-    size: 19px
-  line-height: 23px
-  color: #1F2041
+  height: 150px
 .diagram
   display: inline-block
   position: relative
@@ -48,10 +38,12 @@
   height: 120px
 
 .impressions-room__appraisal
-  grid-row-start: 2
-  grid-row-end: 3
   grid-column-start: 2
   grid-column-end: 3
+  grid-row-start: 2
+  grid-row-end: 3
+  padding:
+    top: 18px
 .bullet-list_marker-color-peach::before 
   background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%)
   -webkit-background-clip: text
