@@ -10,6 +10,7 @@ include mixin-room-details/mixin-room-details.pug
 include mixin-input-narrow-field/mixin-input-narrow-field.pug
 include mixin-rate-button/rate-button.pug
 include mixin-bullet-list/bullet-list.pug
+include mixin-like-button/mixin-like-button.pug
 +button-click-me('CLICK ME')(class="button-click-me")
 +button-click-me('CLICK ME')(class="button-click-me button-click-me_opacity")
 div.button-click-background-wrapper <!--при экспорте на страницу забрать вместе с button-->
@@ -35,8 +36,8 @@ include dropdown-wide/dropdown-wide-table.pug
 +radio-buttons("Женщина", "woman","woman")(class="radio-buttons")
 include toggle/toggle.pug
 include toggle/faint-copy-toggle.pug
-include like-button/like-button.pug
-include like-button/faint-copy-like-button.pug
++like-button("./src/modules/mixin-like-button/img/favorite.png", 12)
+include mixin-like-button/faint-copy-like-button.pug
 ul.wrapper
   +bullet-list("Нельзя с питомцами")(class="bullet-list")
   +bullet-list("Без вечеринок и мероприятий")(class="bullet-list")

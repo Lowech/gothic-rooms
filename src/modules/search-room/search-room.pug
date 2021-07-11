@@ -1,0 +1,32 @@
+include ../mixin-checkbox-buttons/mixin-checkbox-buttons.pug
+//div.search-room-header-wrapper
+  include ../header/header.pug
+div.search-room
+  div.search-room__navigation
+    div.filter-date-dropdown-wrapper
+      h2.filter-date-dropdown-wrapper__title даты пребывания в отеле
+      include ../filter-date-dropdown-input/filter-date-dropdown.pug
+    div.dropdown-wide-wrapper
+      h2.dropdown-wide-wrapper__title гости
+      include ../dropdown-wide/dropdown-wide-table.pug
+    div.range-slider-wrapper
+      h2.range-slider-wrapper__title диапазон цены
+      include ../range-slider/range-slider.pug
+      span.range-slider-wrapper__text Стоимость за сутки пребывания в номере
+    div.checkbox-buttons-wrapper
+      h2.checkbox-buttons-wrapper__title правила дома
+      +checkbox-buttons("Можно курить")(class="checkbox-label")
+      +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
+      +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
+    div.rich-heckbox-buttons-wrapper
+      include ../rich-heckbox-buttons/rich-heckbox-buttons.pug
+    div.dropdown-less-wrapper
+      h2.dropdown-less-wrapper__title удобства номера
+      include ../dropdown-less/dropdown-less-table.pug
+    div.expandable-checkbox-list-wrapper
+      include ../expandable-checkbox-list/expandable-checkbox-list.pug
+  div.search-room__img
+//footer.search-room-navigation-footer-wrapper
+  include ../navigation-footer/navigation-footer.pug
+//footer.search-room-footer-full-wrapper
+  include ../footer-full/footer-full.pug
