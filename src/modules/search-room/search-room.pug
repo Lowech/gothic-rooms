@@ -14,7 +14,7 @@ div.search-room
       include ../range-slider/range-slider.pug
       span.range-slider-wrapper__text Стоимость за сутки пребывания в номере
     div.checkbox-buttons-wrapper
-      h2.checkbox-buttons-wrapper__title правила дома
+      h2.checkbox-buttons-wrapper__title(id="dddd") правила дома
       +checkbox-buttons("Можно курить")(class="checkbox-label")
       +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
       +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
@@ -26,6 +26,19 @@ div.search-room
     div.expandable-checkbox-list-wrapper
       include ../expandable-checkbox-list/expandable-checkbox-list.pug
   div.search-room__img
+    include ../card-slider-arrow/card-slider-arrow.pug
+    include ../card-slider/card-slider.pug
+    include ../card-slider1/card-slider-arrow.pug
+    include ../card-slider2/card-slider-arrow.pug
+    include ../card-slider3/card-slider-arrow.pug
+    include ../card-slider4/card-slider-arrow.pug
+    include ../card-slider5/card-slider-arrow.pug
+    include ../card-slider6/card-slider-arrow.pug
+    include ../card-slider7/card-slider-arrow.pug
+    include ../card-slider8/card-slider-arrow.pug
+    include ../card-slider9/card-slider-arrow.pug
+    include ../card-slider10/card-slider-arrow.pug
+    
 //footer.search-room-navigation-footer-wrapper
   include ../navigation-footer/navigation-footer.pug
 //footer.search-room-footer-full-wrapper
