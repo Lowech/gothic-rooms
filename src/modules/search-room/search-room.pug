@@ -10,15 +10,15 @@ div.search-room
       h2.dropdown-wide-wrapper__title гости
       include ../dropdown-wide/dropdown-wide-table.pug
     div.range-slider-wrapper
-      h2.range-slider-wrapper__title диапазон цены
       include ../range-slider/range-slider.pug
-      span.range-slider-wrapper__text Стоимость за сутки пребывания в номере
     div.checkbox-buttons-wrapper
       h2.checkbox-buttons-wrapper__title(id="dddd") правила дома
-      +checkbox-buttons("Можно курить")(class="checkbox-label")
-      +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
-      +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
+      div.checkbox-buttons-container
+        +checkbox-buttons("Можно курить")(class="checkbox-label")
+        +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
+        +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
     div.rich-heckbox-buttons-wrapper
+      h2.rich-heckbox-buttons__title доступность
       include ../rich-heckbox-buttons/rich-heckbox-buttons.pug
     div.dropdown-less-wrapper
       h2.dropdown-less-wrapper__title удобства номера
