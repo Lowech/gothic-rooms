@@ -1,13 +1,19 @@
 .search-room
   max-width: 1920px
   min-width: 320px
-  display: flex
-  justify-content: space-around
+  padding-top: 33px
+  padding-bottom: 76px
+  display: grid
+  grid-template-columns: 9% 23% 68%
+  grid-template-rows: 2% auto 8%
 
 .search-room__navigation
   display: flex
   flex-direction: column
-  
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 1
+  grid-row-end: 4
 .filter-date-dropdown-wrapper__title,.dropdown-wide-wrapper__title,.range-slider-wrapper__title,.checkbox-buttons-wrapper__title,.dropdown-less-wrapper__title
   font:
     style: normal
@@ -16,6 +22,45 @@
   line-height: 15px
   text-transform: uppercase
   color: #1F2041
+.search-room__title-block
+  grid-column-start: 3
+  grid-column-end: 4
+  grid-row-start: 1
+  grid-row-end: 2
+  padding-left: 11px
+.search-room__title
+  font:
+    style: normal
+    weight: bold
+    size: 24px
+  color: #1F2041
+  letter-spacing: 1.2px
 
 .search-room__img
-  
+  display: grid
+  grid-template-columns: repeat(3, 282px)
+  grid-template-rows: repeat(4, 278px)
+  grid-column-start: 3
+  grid-column-end: 4
+  grid-row-start: 2
+  grid-row-end: 3
+  padding:
+    left: 10px
+    top: 23px
+.pagination-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  margin:
+    top: 12px
+    right: 128px
+  grid-column-start: 3
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 4
+
+.search-room-navigation-footer-wrapper
+  border-top: 1px solid rgba(31, 32, 65, 0.25)
+
+.search-room-footer-full-wrapper
+  border-top: 1px solid rgba(31, 32, 65, 0.25)

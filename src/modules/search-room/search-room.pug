@@ -1,5 +1,5 @@
 include ../mixin-checkbox-buttons/mixin-checkbox-buttons.pug
-//div.search-room-header-wrapper
+div.search-room-header-wrapper
   include ../header/header.pug
 div.search-room
   div.search-room__navigation
@@ -25,6 +25,8 @@ div.search-room
       include ../dropdown-less/dropdown-less-table.pug
     div.expandable-checkbox-list-wrapper
       include ../expandable-checkbox-list/expandable-checkbox-list.pug
+  div.search-room__title-block
+    h2.search-room__title Номера, которые мы для вас подобрали
   div.search-room__img
     include ../card-slider-arrow/card-slider-arrow.pug
     include ../card-slider/card-slider.pug
@@ -38,8 +40,9 @@ div.search-room
     include ../card-slider8/card-slider-arrow.pug
     include ../card-slider9/card-slider-arrow.pug
     include ../card-slider10/card-slider-arrow.pug
-    
-//footer.search-room-navigation-footer-wrapper
+  div.pagination-wrapper
+    include ../pagination/pagination.pug  
+footer.search-room-navigation-footer-wrapper
   include ../navigation-footer/navigation-footer.pug
-//footer.search-room-footer-full-wrapper
+footer.search-room-footer-full-wrapper
   include ../footer-full/footer-full.pug

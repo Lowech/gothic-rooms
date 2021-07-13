@@ -7,15 +7,17 @@ div.card-slider
       li.card-slider__cicle
       li.card-slider__cicle
       li.card-slider__cicle
-    img.card-slider__arrow-right(src="./src/modules/card-slider/img/arrow-right.png" alt="img")
-    img.card-slider__arrow-left(src="./src/modules/card-slider/img/arrow-left.png" alt="img")
     img.card-slider__img( src="./src/modules/card-slider3/img/card-image3.jpg" alt="img")
     img.card-slider__img( src="./src/modules/card-slider/img/card-image.jpg" alt="img")
     img.card-slider__img( src="" alt="img")
     img.card-slider__img( src="" alt="img")
+    div.card-slider__arrow-right-block
+      img.card-slider__arrow-right(src="./src/modules/card-slider/img/arrow-left.png" alt="img")
+    div.card-slider__arrow-left-block
+      img.card-slider__arrow-left(src="./src/modules/card-slider/img/arrow-left.png" alt="img")
   div.card-slider__characteristics-wrapper
-    span.card-slider__number № 888<span class="card-slider__category">люкс</span>
-    span.card-slider__sum 9 900₽ в сутки
+    span.card-slider__sign № <span class="card-slider__number">740</span><span class="card-slider__category">люкс</span>
+    span.card-slider__sum 6 000₽ <span class="card-slider__sum-text">в сутки</span>
   div.card-slider__reviews-wrapper
-    +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png")(class="rate-button__img")
-    +number-reviews("145", "Отзывов")
+    +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
+    +number-reviews("44", "Отзывов")
