@@ -1,26 +1,26 @@
 div.dropdown-wide(id="block-guests")
-  input.dropdown-wide__input.dropdown-wide__input_border-bottom(type="number" placeholder="Сколько гостей" id="table-input-guests")
-  div.dropdown-wide__table(id="table-guests")
-    h2.dropdown-wide__title взрослые
-    div.dropdown-wide__circle
-      span.dropdown-wide__less-sign -
-    div.dropdown-wide__block
-      span.dropdown-wide__number 0
-    div.dropdown-wide__circle
-      span.dropdown-wide__more-sign +
-    h2.dropdown-wide__title дети
-    div.dropdown-wide__circle
-      span.dropdown-wide__less-sign -
-    div.dropdown-wide__block
-      span.dropdown-wide__number 0
-    div.dropdown-wide__circle
-      span.dropdown-wide__more-sign +
-    h2.dropdown-wide__title младенцы
-    div.dropdown-wide__circle
-      span.dropdown-wide__less-sign -
-    div.dropdown-wide__block
-      span.dropdown-wide__number 0
-    div.dropdown-wide__circle
-      span.dropdown-wide__more-sign +
-    span.dropdown-wide__clear очистить
-    span.dropdown-wide__apply применить
+  input.dropdown-wide__input(type="text" placeholder="Сколько гостей" id="table-input-guests")
+div.dropdown-wide__table(id="table-guests")
+  h2.dropdown-wide__title взрослые
+  div.dropdown-wide__circle(id="lessNumber")
+    span.dropdown-wide__less-sign -
+  div.dropdown-wide__block
+    span.dropdown-wide__number(id="sum") 0
+  div.dropdown-wide__circle(id="moreNumber")
+    span.dropdown-wide__more-sign +
+  h2.dropdown-wide__title дети
+  div.dropdown-wide__circle(id="lessNumber1")
+    span.dropdown-wide__less-sign -
+  div.dropdown-wide__block
+    span.dropdown-wide__number(id="sum1") 0
+  div.dropdown-wide__circle(id="moreNumber1")
+    span.dropdown-wide__more-sign +
+  h2.dropdown-wide__title младенцы
+  div.dropdown-wide__circle(id="lessNumber2")
+    span.dropdown-wide__less-sign -
+  div.dropdown-wide__block
+    span.dropdown-wide__number(id="sum2") 0
+  div.dropdown-wide__circle(id="moreNumber2")
+    span.dropdown-wide__more-sign +
+  span.dropdown-wide__clear(id="clearTable") очистить
+  span.dropdown-wide__apply(id="insertTable") применить
