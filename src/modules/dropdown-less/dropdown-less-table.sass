@@ -5,40 +5,57 @@
     content: url(../src/modules/mixin-input-wide-field/img/expand_more.png)
     position: absolute
     cursor: pointer
-    right: 20px
-    top: 15px
+    right: 17px
+    top: 13px
 .dropdown-less__input
-  width: 320px
+  width: 266px
   height: 44px
   background: #FFFFFF
-  border: 1px solid rgba(31, 32, 65, 0.25)
+  border: 1px solid rgba(31, 32, 65, 0.5)
   box-sizing: border-box
   color: rgba(31, 32, 65, 0.75)
   outline: none
+  padding-left: 12px
+  letter-spacing: 0.7px
   &::placeholder
-    color: rgba(31, 32, 65, 0.25)
-.dropdown-less__input_border-bottom
+    color: rgba(31, 32, 65, 0.75)
+    letter-spacing: 0.7px
+  //стили при открытие таблицы/
+//.dropdown-less__input_border-bottom
   border-radius: 0px
   border-top-right-radius: 4px
   border-top-left-radius: 4px
   border: 1px solid rgba(31, 32, 65, 0.5)
 .dropdown-less__table
   display: grid
-  grid-template-columns: 70% 10% 10% 10%
-  grid-template-rows: 25% 25% 25% 25%
-  width: 320px
-  height: 159px
+  grid-template-columns: 63% 11% 12% 14%
+  grid-template-rows: 32% 31% 37% 
+  width: 266px
+  height: 118px
   background: #FFFFFF
   border: 1px solid rgba(31, 32, 65, 0.5)
   box-sizing: border-box
   border-top: none
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
-.dropdown-less__title,.dropdown-wide__number
+.dropdown-less__title
   font:
     style: normal
     weight: bold
     size: 12px
   line-height: 15px
+  letter-spacing: 0.7px
+  text-transform: uppercase
+  color: #1F2041
+  padding:
+    top: 13px
+    left: 13px
+.dropdown-less__number
+  font:
+    style: normal
+    weight: bold
+    size: 12px
+  line-height: 15px
+  letter-spacing: 0.7px
   text-transform: uppercase
   color: #1F2041
 .dropdown-less__circle
@@ -50,12 +67,16 @@
   border: 1px solid rgba(31, 32, 65, 0.25)
   box-sizing: border-box
   border-radius: 22px
+  margin:
+    top: 5px
 .dropdown-less__block
   display: flex
   justify-content: center
   align-items: center
   width: 30px
   height: 30px
+  margin:
+    top: 5px
 .dropdown-less__clear
   grid-row-start: 4
   grid-row-end: 5

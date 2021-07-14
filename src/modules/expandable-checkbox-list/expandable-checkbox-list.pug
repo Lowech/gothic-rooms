@@ -1,8 +1,8 @@
 include ../mixin-checkbox-buttons/mixin-checkbox-buttons.pug
+//div.expandable-checkbox-list
+  span.expandable-checkbox-list__text дополнительные удобства
+span.expandable-checkbox-list__text.expandable-checkbox-list_opening-list дополнительные удобства
 div.expandable-checkbox-list
-  span.expandable-checkbox-list__text expandable-checkbox-list
-div.expandable-checkbox-list
-  span.expandable-checkbox-list__text.expandable-checkbox-list_opening-list expandable-checkbox-list
   +checkbox-buttons("Завтрак")(class="checkbox-label")
   +checkbox-buttons("Письменный стол", "checked")(class="checkbox-label")
   +checkbox-buttons("Стул для кормления", "checked")(class="checkbox-label")

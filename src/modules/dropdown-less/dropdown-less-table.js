@@ -8,13 +8,12 @@ function Hide(){
 }
 function Show(event){
     console.log(event.currentTarget.id)
-    if(event.currentTarget.id==='block-guests' || event.currentTarget.id==='#table-guests' || event.target.id==="table-input-guests")
+    if(event.target.id==='dropdownlessinput' || event.target.id==='dropdownlesstable' )
     {
-        $('#table-guests').show();
+        $('#dropdownlesstable').show();
     }
      else{
-        $('#table-guests').hide();
+        $('#dropdownlesstable').hide();
      }    
 }
-$('#table-guests').hide();
-
+//$('#dropdownlesstable').hide();

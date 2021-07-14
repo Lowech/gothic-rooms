@@ -1,6 +1,9 @@
 .expandable-checkbox-list
-  //display: inline-block
+  display: inline-block
   width: 266px 
+  padding:
+    left: 31px
+    top: 6px
 .expandable-checkbox-list__text
   font:
     style: normal
@@ -9,9 +12,10 @@
   line-height: 15px
   text-transform: uppercase
   color: #1F2041
+  letter-spacing: 1px
   &::after
     content: url(../src/modules/expandable-checkbox-list/img/expand_more.png)
-    padding-left: 40px
+    padding-left: 25px
 .expandable-checkbox-list_opening-list::after
   content: url(../src/modules/expandable-checkbox-list/img/expand_more-top.png)
-  padding-left: 40px
+  padding-left: 26px
