@@ -1,8 +1,8 @@
-//import  $ from 'jquery'// подключение к файлу библиотеки jquery
+import  $ from 'jquery'// подключение к файлу библиотеки jquery
 
 
 //$("#block-entrance-guests").on('blur',Hide);
-$("body").on('click',Show);
+$("#table-guests").on('click',Show);
 function Hide(){
     $('#table-guests').hide();
 }

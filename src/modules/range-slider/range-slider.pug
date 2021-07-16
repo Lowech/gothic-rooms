@@ -5,7 +5,12 @@ div.range-slider
       span.sum-left 5 000₽
       span.hyphen -
       span.sum-right 10 000₽
-  div.band-border
-    div.band-border__left
-    div.band-border__right
+  div.band-container
+    div.band-border
+      div.band-border__left
+      div.band-border__right
   span.range-slider-text Стоимость за сутки пребывания в номере
+  div.range-slider-tablo
+    input(class="range-slider-tablo__number-min" type="number")
+    input(class="range-slider-tablo__number-max" type="number")
+    button(class="range-slider-tablo__button") применить

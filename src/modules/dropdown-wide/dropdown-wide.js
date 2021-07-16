@@ -25,12 +25,21 @@ function Show(event){
 
 $("#lessNumber").on('click',lessNumber)
 function lessNumber(){
+    if(sum===1)
+    {
+        $("#lessNumber").toggleClass("dropdown-wide__circle_border-pale");
+        $('.dropdown-wide__less-sign-top').toggleClass("dropdown-wide__less-sign_border-pale");
+        
+    }
     if(sum===0)return;
         sum--
         $('#sum').text(sum); 
+        
 }
 $("#moreNumber").on('click',moreNumber)
 function moreNumber(){
+    $("#lessNumber").removeClass("dropdown-wide__circle_border-pale");
+    $(".dropdown-wide__less-sign-top").removeClass("dropdown-wide__less-sign_border-pale");
         sum++
         $('#sum').text(sum);
 }
@@ -40,7 +49,9 @@ function moreNumber(){
 $("#clearTable").on('click',clearTable)
 function clearTable(){
     $('#sum').text("0");
-    $('#table-input-guests').val(" ");
+    $('#table-input-guests').val("");
+    $("#lessNumber").toggleClass("dropdown-wide__circle_border-pale");
+    $('.dropdown-wide__less-sign-top').toggleClass("dropdown-wide__less-sign_border-pale");
     sum=0;
 }
 ///////////////////////////////
@@ -56,7 +67,5 @@ function insertTable(){
 
 
 ////////////////////////////////
-console.log(typeof sum);
 $('#table-guests').hide();
 //$('#table-input-guests').blur(function()
-//

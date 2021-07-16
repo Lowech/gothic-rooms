@@ -1,2 +1,2 @@
-mixin button-narrow(name)
-  button(class!=attributes.class)=name
+mixin button-narrow(name, href)
+  a(class!=attributes.class href=href)=name

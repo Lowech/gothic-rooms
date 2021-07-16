@@ -54,6 +54,7 @@
   box-sizing: border-box
   border-top: none
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+
 .dropdown-wide__title
   font:
     style: normal
@@ -66,6 +67,7 @@
   padding:
     top: 13px
     left: 13px
+
 .dropdown-wide__number
   font:
     style: normal
@@ -75,7 +77,8 @@
   text-transform: uppercase
   letter-spacing: 0.7px
   color: #1F2041
-.dropdown-wide__circle
+
+.dropdown-wide__circle,.dropdown-wide__circle-top,.dropdown-wide__circle-center,.dropdown-wide__circle-bottom
   display: flex
   justify-content: center
   align-items: center
@@ -87,6 +90,16 @@
   margin:
     top: 5px
   cursor: pointer
+
+.dropdown-wide__less-sign-bottom,.dropdown-wide__less-sign-top,.dropdown-wide__less-sign-center,.dropdown-wide__more-sign
+  color: rgba(31, 32, 65, 0.5)
+//модификация bordera//
+.dropdown-wide__less-sign_border-pale
+  color: rgba(31, 32, 65, 0.25)
+.dropdown-wide__circle_border-pale
+  border: 1px solid rgba(31, 32, 65, 0.15)
+/////////
+
 .dropdown-wide__block
   display: flex
   justify-content: center
@@ -95,6 +108,7 @@
   height: 30px
   margin:
     top: 5px
+
 .dropdown-wide__clear
   grid-row-start: 4
   grid-row-end: 5
@@ -112,6 +126,7 @@
   &:active
     color: #BA55D3
     text-shadow: 1px 1px 10px #808080
+
 .dropdown-wide__apply
   grid-row-start: 4
   grid-row-end: 5

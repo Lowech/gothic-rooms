@@ -1,6 +1,6 @@
-mixin button-broad(name)
+mixin button-broad(name,href)
   div.button-broad-wrapper
-    button(class!=attributes.class)=name
+    a(class!=attributes.class href=href)=name
   
 
   
