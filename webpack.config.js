@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 //const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
-const  {webpack}  = require('webpack');
+const  webpack  = require('webpack');
 
 
 const isDev= process.env.NODE_ENV==='development';//выставляем проверку на сборку приложения development или production
@@ -63,7 +63,12 @@ module.exports={
         //),
         new MiniCssExtractPlugin({//собирает все файлы css в один
             filename:'[name].[id].bundle.css'
-        }) 
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          }) 
     ],
     module:{
         rules:[

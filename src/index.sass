@@ -1,4 +1,4 @@
-@import ./src/fonds/fonds.sass
+@import ./src/fonts/fonts.sass
 @import ./src/modules/header/header.sass
 @import ./src/modules/header-user-name/header-user-name.sass
 @import ./src/modules/user-name/user-name.sass
@@ -53,10 +53,16 @@
 @import ./src/modules/mixin-review/mixin-review.sass
 @import ./src/modules/mixin-user-name-picture/mixin-user-name-picture.sass
 @import ./src/modules/search-room/search-room.sass
+
+@import ./src/modules/calendar/calendar.sass
+//стили календаря
+@import ../node_modules/air-datepicker/dist/css/datepicker.min.css 
+
+
 body
-  font-family: Montserrat, Arial, sans-serif
-  font-size: 14px
-  color: rgba(31, 32, 65, 0.75)
+  font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
   background-color: #FFFFFF
   margin: 0px
   padding: 0px
