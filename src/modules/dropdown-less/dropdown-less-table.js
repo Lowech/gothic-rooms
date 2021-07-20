@@ -7,7 +7,7 @@ function Hide(){
     $('#table-guests').hide();
 }
 function Show(event){
-    console.log(event.currentTarget.id)
+    //console.log(event.currentTarget.id)
     if(event.target.id==='dropdownlessinput' || event.target.id==='dropdownlesstable' )
     {
         $('#dropdownlesstable').show();
