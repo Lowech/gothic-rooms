@@ -1,26 +1,24 @@
-div.dropdown-less
-  input.dropdown-less__input.dropdown-less__input_border-bottom(id="dropdownlessinput" type="number" placeholder="2 спальни, 2 кровати...")
-  div.dropdown-less__table(id="dropdownlesstable")
-    h2.dropdown-less__title спальни
-    div.dropdown-less__circle
-      span.dropdown-less__less-sign -
-    div.dropdown-less__block
-      span.dropdown-less__number 2
-    div.dropdown-less__circle
-      span.dropdown-less__more-sign +
-    h2.dropdown-less__title кровати
-    div.dropdown-less__circle
-      span.dropdown-less__less-sign -
-    div.dropdown-less__block
-      span.dropdown-less__number 2
-    div.dropdown-less__circle
-      span.dropdown-less__more-sign +
-    h2.dropdown-less__title ванные комнаты
-    div.dropdown-less__circle
-      span.dropdown-less__less-sign -
-    div.dropdown-less__block
-      span.dropdown-less__number 0
-    div.dropdown-less__circle
-      span.dropdown-less__more-sign +
-    //span.dropdown-less__clear очистить
-    //span.dropdown-less__apply применить
+div.dropdown-less.js-dropdown-less
+  input.dropdown-less__input.js-dropdown-less__input( type="text" placeholder="2 спальни, 2 кровати...")
+div.dropdown-less__table.js-dropdown-less__table
+  h2.dropdown-less__title спальни
+  div.dropdown-less__circle-top.js-dropdown-less__circle-top.dropdown-less__circle_border-pale
+    span.dropdown-less__less-sign-top.js-dropdown-less__less-sign-top.dropdown-less__less-sign-pale -
+  div.dropdown-less__block
+    span.dropdown-less__number-dorm.js-dropdown-less__number-dorm 0
+  div.dropdown-less__circle-dorm.js-dropdown-less__circle-dorm
+    span.dropdown-less__more-sign +
+  h2.dropdown-less__title кровати
+  div.dropdown-less__circle-center.js-dropdown-less__circle-center.dropdown-less__circle_border-pale
+    span.dropdown-less__less-sign-center.js-dropdown-less__less-sign-center.dropdown-less__less-sign-pale -
+  div.dropdown-less__block
+    span.dropdown-less__number-bed.js-dropdown-less__number-bed 0
+  div.dropdown-less__circle-bed.js-dropdown-less__circle-bed
+    span.dropdown-less__more-sign +
+  h2.dropdown-less__title ванные комнаты
+  div.dropdown-less__circle-bottom.js-dropdown-less__circle-bottom.dropdown-less__circle_border-pale
+    span.dropdown-less__less-sign-bottom.js-dropdown-less__less-sign-bottom.dropdown-less__less-sign-pale -
+  div.dropdown-less__block
+    span.dropdown-less__number-bathrooms.js-dropdown-less__number-bathrooms 0
+  div.dropdown-less__circle-bathrooms.js-dropdown-less__circle-bathrooms
+    span.dropdown-less__more-sign +

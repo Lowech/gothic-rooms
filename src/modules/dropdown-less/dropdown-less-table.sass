@@ -1,12 +1,21 @@
 .dropdown-less
   display: inline-block
-  position: relative
+  height: 44px
   &::after
     content: url(../src/modules/mixin-input-wide-field/img/expand_more.png)
     position: absolute
     cursor: pointer
     right: 17px
     top: 13px
+//модификация по нажатию/
+.dropdown-less_active::after
+  content: url(../src/modules/dropdown-wide/img/expand_more-top.png)
+  position: absolute
+  cursor: pointer
+  right: 17px
+  top: 13px
+///    /
+
 .dropdown-less__input
   width: 266px
   height: 44px
@@ -16,17 +25,18 @@
   color: rgba(31, 32, 65, 0.75)
   outline: none
   padding-left: 12px
-  letter-spacing: 0.7px
   &::placeholder
-    color: rgba(31, 32, 65, 0.75)
-    letter-spacing: 0.7px
+    color:  rgba(31, 32, 65, 0.25)
+
   //стили при открытие таблицы/
-//.dropdown-less__input_border-bottom
+.dropdown-less__input_border-bottom
   border-radius: 0px
   border-top-right-radius: 4px
   border-top-left-radius: 4px
   border: 1px solid rgba(31, 32, 65, 0.5)
 .dropdown-less__table
+  position: absolute
+  z-index: 1
   display: grid
   grid-template-columns: 63% 11% 12% 14%
   grid-template-rows: 32% 31% 37% 
@@ -49,7 +59,9 @@
   padding:
     top: 13px
     left: 13px
-.dropdown-less__number
+.dropdown-less__number-dorm,
+.dropdown-less__number-bed,
+.dropdown-less__number-bathrooms
   font:
     style: normal
     weight: bold
@@ -58,7 +70,12 @@
   letter-spacing: 0.7px
   text-transform: uppercase
   color: #1F2041
-.dropdown-less__circle
+.dropdown-less__circle-top,
+.dropdown-less__circle-center,
+.dropdown-less__circle-bottom,
+.dropdown-less__circle-dorm,
+.dropdown-less__circle-bed,
+.dropdown-less__circle-bathrooms
   display: flex
   justify-content: center
   align-items: center
@@ -69,6 +86,24 @@
   border-radius: 22px
   margin:
     top: 5px
+.dropdown-less__less-sign-top,
+.dropdown-less__less-sign-center,
+.dropdown-less__less-sign-bottom
+
+.dropdown-less__more-sign
+  color: rgba(31, 32, 65, 0.5)
+
+//модификация bordera//
+.dropdown-less__less-sign-pale,
+.dropdown-less__less-sign-pale,
+.dropdown-less__less-sign-pale
+  color: rgba(31, 32, 65, 0.15)
+.dropdown-less__circle_border-pale,
+.dropdown-less__circle_border-pale,
+.dropdown-less__circle_border-pale
+  border: 1px solid rgba(31, 32, 65, 0.15)
+/////////
+
 .dropdown-less__block
   display: flex
   justify-content: center
