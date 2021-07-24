@@ -1,0 +1,32 @@
+.navBurger
+  display: none
+.navBurger__nav
+  display: none
+@media screen and ( max-width:900px  )
+  .header
+    grid-template-columns: minmax(auto, 1%) minmax(100px, 27%) minmax(auto, 485px) minmax(300px, auto)
+  .navBurger
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: space-between
+    align-items: center
+    width: 30px
+    height: 30px
+    border-radius: 25%
+    background-color: #FFFFFF
+    border: 2px solid #BC9CFF
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+    cursor: pointer
+  .navBurger__border
+    width: 20px
+    height: 4px
+    margin-top: 2px
+    border-radius: 50%
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+.navBurger__nav
+  position: absolute
+  top: 70px
+  left: 17px
+.navBurger__nav_active-show
+     display: block
