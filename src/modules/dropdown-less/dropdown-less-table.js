@@ -98,16 +98,16 @@ function insertTableNumberDorm(){
 
     if(amountBed>0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,');
     }
     
     if(numberBathrooms>0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
     if(amountBed > 0 && numberBathrooms > 0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
 }
 
@@ -118,16 +118,16 @@ function insertTableNumberBed(){
     }
     if(numberDorm>0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,');
     }
     
     if(numberBathrooms>0)
     {
-        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
     if(numberDorm > 0 && numberBathrooms > 0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати' + numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
 }
 function insertTableNumberBathrooms(){
@@ -137,16 +137,16 @@ function insertTableNumberBathrooms(){
     }
     if(amountBed>0)
     {
-        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
     
     if(numberDorm>0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
     if(numberDorm > 0 && amountBed > 0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
 }
 //удаление из инпутов
@@ -165,7 +165,7 @@ function deletionTableNumberDorm(){
     }
     if(amountBed > 0 && numberBathrooms > 0)
     {
-        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(amountBed + " " + 'кровати,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
 }
 function deletionTableNumberBed(){
@@ -183,7 +183,7 @@ function deletionTableNumberBed(){
     }
     if(numberDorm > 0 && numberBathrooms > 0)
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ numberBathrooms + " " + 'ванные комнаты,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + numberBathrooms + " " + 'ванные комнаты,');
     }
 }
 function deletionTableNumberBathrooms(){
@@ -201,7 +201,7 @@ function deletionTableNumberBathrooms(){
     }
     if(numberDorm > 0 && amountBed > 0 )
     {
-        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,'+ amountBed + " " + 'кровати,');
+        $('.js-dropdown-less__input').val(numberDorm + " " + 'спальни,' + " " + amountBed + " " + 'кровати,');
     }
 }
 ////////////////////////////////

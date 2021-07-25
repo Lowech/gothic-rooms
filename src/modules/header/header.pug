@@ -5,7 +5,8 @@ header.header
     include ../logo/logo.pug
   div.nav-wrapper
     include ../header-nav/nav.pug
+  div.nav-wrapper-navBurger
+    include ../navBurger/navBurger.pug
   div.button-wrapper
-    +button-broad('войти', 'page-login.pug')(class="button-broad")
-    div.button-narrow-wrapper
-    +button-narrow('зарегистрироваться', 'page-login.pug')(class="button-narrow")
+    +button-broad('войти', '../modules/page-login/page-login.html')(class="button-broad")
+    +button-narrow('зарегистрироваться', 'page-login/page-login.pug')(class="button-narrow")

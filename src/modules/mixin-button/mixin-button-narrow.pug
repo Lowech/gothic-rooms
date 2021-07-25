@@ -1,2 +1,3 @@
 mixin button-narrow(name, href)
-  a(class!=attributes.class href=href)=name
+  div.button-narrow-wrapper
+    a(class!=attributes.class href=href)=name

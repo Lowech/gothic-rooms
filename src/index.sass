@@ -4,6 +4,7 @@
 @import ./src/modules/user-name/user-name.sass
 @import ./src/modules/logo/logo.sass
 @import ./src/modules/header-nav/nav.sass
+@import ./src/modules/navBurger/navBurger.sass
 @import ./src/modules/mixin-button/mixin-button-broad.sass
 @import ./src/modules/mixin-button/mixin-button-narrow.sass
 @import ./src/modules/footer-copyright/footer-copyright-text.sass
@@ -43,8 +44,7 @@
 @import ./src/modules/dropdown-wide/dropdown-wide-table.sass
 @import ./src/modules/dropdown-less/dropdown-less.sass
 @import ./src/modules/dropdown-less/dropdown-less-table.sass
-@import ./src/modules/card-slider/card-slider.sass
-@import ./src/modules/card-slider-arrow/card-slider-arrow.sass
+@import ./src/modules/card-slider-main/card-slider-main.sass
 @import ./src/modules/block-cancel/block-cancel.sass
 @import ./src/modules/mixin-number-reviews/mixin-number-reviews.sass
 @import ./src/modules/impressions-room/impressions-room.sass
@@ -53,16 +53,21 @@
 @import ./src/modules/mixin-review/mixin-review.sass
 @import ./src/modules/mixin-user-name-picture/mixin-user-name-picture.sass
 @import ./src/modules/search-room/search-room.sass
-
-@import ./src/modules/calendar/calendar.sass
+//@import ./src/modules/calendar/calendar.sass
 //стили календаря
 @import ../node_modules/air-datepicker/dist/css/datepicker.min.css 
-
-
-body
+@import ../node_modules/paginationjs/dist/pagination.css
+%MontserratNormalBold
   font:
     family: 'Montserrat' , Arial, sans-serif
     style: normal
+    weight: bold
+%MontserratNormalNormal
+  font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
+    weight: normal
+body
   background-color: #FFFFFF
   margin: 0px
   padding: 0px

@@ -48,6 +48,14 @@ module.exports={
     plugins:[
         new HTMLWebpackPlugin({
             template:'./index.pug',//названия файлов в папке src
+            filename: 'index.html',
+            minify:{
+                collapseWhitespace:isProd// оптимизация html
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/pro.pug',//названия файлов в папке src
+            filename: 'modules/pro.html',
             minify:{
                 collapseWhitespace:isProd// оптимизация html
             }

@@ -1,10 +1,14 @@
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat';
   src: url("./fonds/Montserrat-Regular.woff") format("woff"), url("./fonds/Montserrat-Regular.ttf") format("truetype"), url("../src/fonds/Montserrat-Regular.svg") format("svg");
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat';
   src: url("./fonds/Montserrat-Bold.woff") format("woff"), url("./fonds/Montserrat-Bold.ttf") format("truetype"), url("../src/fonds/Montserrat-Bold.svg") format("svg");
+  font-style: normal;
+  font-weight: bold;
 }
 /*# sourceMappingURL=fonds.css.map */

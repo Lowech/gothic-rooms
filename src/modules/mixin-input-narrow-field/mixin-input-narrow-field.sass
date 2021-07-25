@@ -1,29 +1,39 @@
 .narrow-field-block__input
   display: inline-block
-  position: relative
   background: #FFFFFF
   border: 1px solid rgba(31, 32, 65, 0.25)
   box-sizing: border-box
   border-radius: 4px
   width: 260px
   height: 44px
+  padding-left: 15px
+  font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
+    weight: normal
+    size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
   &::placeholder
     font:
+      family: 'Montserrat' , Arial, sans-serif
       style: normal
       weight: normal
       size: 14px
     line-height: 24px
     color: rgba(31, 32, 65, 0.25)
-    padding-left: 15px
 .narrow-field-block
   display: inline-block
   position: relative
   padding-top: 22px 
-  &::after
-    position: absolute
-    content: url(../src/modules/mixin-input-narrow-field/img/arrow-forward.png)
-    cursor: pointer
-    right: 15px
-    top: 35px
-  .narrow-field-block__input_width-more
-    width: 267px
+.narrow-field-button
+  position: absolute
+  background: #FFFFFF
+  outline: none
+  border: none
+  top: 25px
+  right: 8px
+  height: 40px
+  cursor: pointer    
+.narrow-field-block__input_width-more
+  width: 267px

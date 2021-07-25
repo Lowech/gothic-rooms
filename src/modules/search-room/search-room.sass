@@ -1,37 +1,34 @@
 .search-room
   max-width: 1920px
   min-width: 320px
-  padding-top: 33px
-  padding-bottom: 76px
   display: grid
-  grid-template-columns: 9% 23% 68%
-  grid-template-rows: 2% auto 8%
+  grid-template-columns: minmax(auto, 9%) minmax(280px, 23%) minmax(auto, auto)
+  grid-template-rows: minmax(2%, 5%) auto auto 7% 5%
 
 .search-room__navigation
   display: flex
   flex-direction: column
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 1
-  grid-row-end: 4
-  margin-left: 11px
+  grid-column: 2/3
+  grid-row: 2/6
+  margin:
+    left: 11px
+    top: 6px
 
 .filter-date-dropdown-wrapper__title,.dropdown-wide-wrapper__title,.range-slider-wrapper__title,.checkbox-buttons-wrapper__title,.dropdown-less-wrapper__title
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 12px
   line-height: 15px
   text-transform: uppercase
   color: #1F2041
-  letter-spacing: 0.6px
 .filter-date-dropdown-wrapper__title
   padding:
     left: 1px
-    bottom: 3px
-  letter-spacing: 0.6px
+    bottom: 5px
 .dropdown-wide-wrapper
-  padding-top: 22px
+  padding-top: 21px
 .dropdown-wide-wrapper__title
   padding:
     bottom: 3px
@@ -42,9 +39,8 @@
 .checkbox-buttons-wrapper
   width: 230px
   padding:
-    top: 30px
+    top: 28px
 .checkbox-buttons-wrapper__title
-  letter-spacing: 0.9px
   padding:
     bottom: 6px
     left: 1px
@@ -56,11 +52,11 @@
     top: 30px
 .rich-heckbox-buttons__title
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 12px
   line-height: 15px
-  letter-spacing: 0.7px
   text-transform: uppercase
   color:  #1F2041
   padding:
@@ -69,62 +65,68 @@
 
 .dropdown-less-wrapper
   padding:
-    top: 31px
+    top: 28px
     left: 2px
 .dropdown-less-wrapper__title
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 12px
   line-height: 15px
   text-transform: uppercase
   color: #1F2041
-  padding-bottom: 3px
+  padding-bottom: 4px
 
 .expandable-checkbox-list-wrapper
   padding-top: 30px
 
 
 .search-room__title-block
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 1
-  grid-row-end: 2
-  padding-left: 11px
+  grid-column: 3/4
+  grid-row: 2/3
+  padding:
+    left: 11px
+    top: 6px
 .search-room__title
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 24px
   color: #1F2041
-  letter-spacing: 1px
-  word-spacing: 1px
 
 .search-room__img
   display: grid
   grid-template-columns: repeat(3, 282px)
   grid-template-rows: repeat(4, 278px)
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 2
-  grid-row-end: 3
+  grid-column: 3/4
+  grid-row: 3/4
   padding:
-    left: 10px
-    top: 23px
+    left: 11px
+    top: 21px
+@media screen and ( max-width:  1150px)
+  .search-room__img
+    grid-template-columns: repeat(2, 282px)
+    grid-template-rows: repeat(6, 278px)
 .pagination-wrapper
   display: flex
   justify-content: center
   align-items: center
   margin:
-    top: 12px
-    right: 128px
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 3
-  grid-row-end: 4
+    top: 5px
+    right: 131px
+  grid-column: 3/4
+  grid-row: 4/5
 
 .search-room-navigation-footer-wrapper
+  margin-top: 94px
+  padding:
+    top: 100px
+    bottom: 101px
   border-top: 1px solid rgba(31, 32, 65, 0.25)
+.search-room-navigation-footer-wrapper__block
+  
 
 .search-room-footer-full-wrapper
   border-top: 1px solid rgba(31, 32, 65, 0.25)

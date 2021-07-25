@@ -12,7 +12,7 @@ div.search-room
     div.range-slider-wrapper
       include ../range-slider/range-slider.pug
     div.checkbox-buttons-wrapper
-      h2.checkbox-buttons-wrapper__title(id="dddd") правила дома
+      h2.checkbox-buttons-wrapper__title правила дома
       div.checkbox-buttons-container
         +checkbox-buttons("Можно курить")(class="checkbox-label")
         +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
@@ -28,9 +28,9 @@ div.search-room
   div.search-room__title-block
     h2.search-room__title Номера, которые мы для вас подобрали
   div.search-room__img
-    include ../card-slider-arrow/card-slider-arrow.pug
+    include ../card-slider-main/card-slider-main.pug
     include ../card-slider/card-slider.pug
-    include ../card-slider1/card-slider-arrow.pug
+    include ../card-slider1/card-slider.pug
     include ../card-slider2/card-slider-arrow.pug
     include ../card-slider3/card-slider-arrow.pug
     include ../card-slider4/card-slider-arrow.pug
@@ -39,10 +39,11 @@ div.search-room
     include ../card-slider7/card-slider-arrow.pug
     include ../card-slider8/card-slider-arrow.pug
     include ../card-slider9/card-slider-arrow.pug
-    include ../card-slider10/card-slider-arrow.pug
+    include ../card-slider10/card-slider-arrow.pug  
   div.pagination-wrapper
     include ../pagination/pagination.pug  
 footer.search-room-navigation-footer-wrapper
-  include ../navigation-footer/navigation-footer.pug
+  div.search-room-navigation-footer-wrapper__block
+    include ../navigation-footer/navigation-footer.pug
 footer.search-room-footer-full-wrapper
   include ../footer-full/footer-full.pug
