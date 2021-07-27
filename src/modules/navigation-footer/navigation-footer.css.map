@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,IAAI;EACxB,qBAAqB,EAAE,sBAAsB;EAC7C,SAAS,EAAE,MAAM;EACjB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,qBAAqB;CAAG;;AAClD,AAAA,0BAA0B,CAAC;EACvB,iBAAiB,EAAE,CAAC;EACpB,eAAe,EAAE,CAAC;CAAG",
-    "sources": [
-        "navigation-footer.sass"
-    ],
-    "names": [],
-    "file": "navigation-footer.css"
-}
