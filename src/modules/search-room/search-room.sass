@@ -2,8 +2,8 @@
   max-width: 1920px
   min-width: 320px
   display: grid
-  grid-template-columns: minmax(auto, 9%) minmax(280px, 23%) minmax(auto, auto)
-  grid-template-rows: minmax(2%, 5%) auto auto 7% 5%
+  grid-template-columns: minmax(auto, 9%) minmax(280px, 23%) minmax(300px, auto)
+  grid-template-rows: 25px auto auto 7% 5%
 
 .search-room__navigation
   display: flex
@@ -14,7 +14,11 @@
     left: 11px
     top: 5px
 
-.filter-date-dropdown-wrapper__title,.dropdown-wide-wrapper__title,.range-slider-wrapper__title,.checkbox-buttons-wrapper__title,.dropdown-less-wrapper__title
+.filter-date-dropdown-wrapper__title,
+.dropdown-wide-wrapper__title,
+.range-slider-wrapper__title,
+.checkbox-buttons-wrapper__title,
+.dropdown-less-wrapper__title
   font:
     family: 'Montserrat' , Arial, sans-serif
     style: normal
@@ -81,7 +85,6 @@
 .expandable-checkbox-list-wrapper
   padding-top: 30px
 
-
 .search-room__title-block
   grid-column: 3/4
   grid-row: 2/3
@@ -98,17 +101,16 @@
 
 .search-room__img
   display: grid
-  grid-template-columns: repeat(3, 282px)
-  grid-template-rows: repeat(4, 278px)
+  grid-template-columns: repeat(auto-fit, minmax(271px, 271px))
+  grid-template-rows: auto
+  grid-row-gap: 21px
+  grid-column-gap: 11px
   grid-column: 3/4
   grid-row: 3/4
   padding:
     left: 11px
     top: 21px
-@media screen and ( max-width:  1150px)
-  .search-room__img
-    grid-template-columns: repeat(2, 282px)
-    grid-template-rows: repeat(6, 278px)
+
 .pagination-wrapper
   display: flex
   justify-content: center
@@ -120,13 +122,16 @@
   grid-row: 4/5
 
 .search-room-navigation-footer-wrapper
-  margin-top: 94px
-  padding:
-    top: 100px
-    bottom: 101px
+  display: grid
+  grid-template-columns: 100%
+  grid-template-rows: minmax(auto,100px) minmax(auto,auto) minmax(auto,100px)
+  margin-top: 70px
   border-top: 1px solid rgba(31, 32, 65, 0.25)
+
 .search-room-navigation-footer-wrapper__block
+  width: 100%
   
+  grid-row: 2/3
 
 .search-room-footer-full-wrapper
   border-top: 1px solid rgba(31, 32, 65, 0.25)
