@@ -2,84 +2,74 @@
   max-width: 1920px
   min-width: 320px
   border-bottom: 1px solid rgba(31, 32, 65, 0.1)
-  padding-bottom: 165px
+  
 .room-details-background
   display: grid
-  grid-template-columns: 69% 31%
-  grid-template-rows: 50% 50%
-  
+  grid-template-columns: minmax(auto, 69%) minmax(auto, 31%)
+  grid-template-rows: 50% 1% 49% 
+
+
 .room-details__img1
-  max-width: 1920px
-  min-width: 320px
-  grid-column-start: 1
-  grid-column-end: 2
-  grid-row-start: 1
-  grid-row-end: 3
-  width: 981px
-  height: 485px
+  line-height: 0
+  grid-column: 1/2
+  grid-row: 1/4
+  width: 100%
+  height: 100%
   
+
 .room-details__img2
-  max-width: 1920px
-  min-width: 320px
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 1
-  grid-row-end: 2
-  width: 461px
-  height: 243px
-  transform: translateX(-1px)
+  grid-column: 2/3
+  grid-row: 1/3
+  line-height: 0
+  width: 100%
+  height: 100%
 
 .room-details__img3
-  max-width: 1920px
-  min-width: 320px
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 2
-  grid-row-end: 3
-  width: 461px
-  height: 243px
-  transform: translate(-1px, -1px)
-
-.room-details-info
+  grid-column: 2/3
+  grid-row: 2/4
+  line-height: 0
+  width: 100%
+  height: 100%
+.room-details-info-top-wrapper
   display: grid
-  grid-template-columns: 6% 3% 25% 30% 37%
-  grid-template-rows:  8% 37% 3% 42% auto
+  grid-template-columns: minmax(20px,10%) auto 8%
+  grid-template-rows: 70px auto
+.room-details-info-top
+  grid-column: 2/3
+  grid-row: 2/5
+  display: grid
+  grid-row-gap: 30px
+  grid-template-columns: minmax(270px,30%) minmax(335px,36%) auto
+  grid-template-rows:  auto
 
-.room-details-info__title
+@media screen and ( max-width:  1100px)
+  .room-details-info-top
+    grid-template-columns: repeat(auto-fit,minmax(360px,auto))
+.room-details-info-top__wrapper-room-details
+    
+.room-details-info-top__title
   font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
     weight: bold
     size: 19px
   line-height: 23px
   color: #1F2041
-
-.room-details-info__wrapper-room-details
-  display: inline-block
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 2
-  grid-row-end: 3
-  padding: 
-    top: 10px
-    left: 12px
-.room-details-info__title-padding-left
+.room-details-info-top__title-padding-left
   padding: 
     left: 8px
+
 .room-details-block
+  width: 280px
   padding-top: 19px
   border-bottom: 1px solid rgba(31, 32, 65, 0.1)
-.room-details-block3
-  padding-top: 19px
 
-.room-details-info__wrapper-impressions-room
-  display: inline-block
-  grid-column-start: 4
-  grid-column-end: 5
-  grid-row-start: 2
-  grid-row-end: 3
-  padding: 
-    top: 9px
-    left: 11px 
-.room-details-info__title_padding-left
+.room-details-info-top__wrapper-impressions-room
+  width: 100%
+  padding-left: 2px
+  
+ 
+.room-details-info-top__title_padding-left
   display: flex
   justify-content: space-between
   padding: 
@@ -89,24 +79,19 @@
   padding: 
     right: 61px
   margin-top: 6px
-.room-details-info__wrapper-form-number-selection-total
-  display: inline-block
-  grid-column-start: 5
-  grid-column-end: 6
-  grid-row-start: 2
-  grid-row-end: 6
+.room-details-info-top__wrapper-form-number-selection-total
   padding: 
-    top: 9px
-    left: 9px 
-.room-details-info__reviews-block
-  grid-column-start: 2
-  grid-column-end: 5
-  grid-row-start: 4
-  grid-row-end: 5
+    left: 7px 
+
+.room-details-info-bottom
+  display: grid
+  grid-template-columns: 
+  grid-template-rows: 
+.room-details-info-bottom__reviews-block
   padding:
     top: 2px
     left: 11px
-.room-details-info__reviews-block-grid
+.room-details-info-bottom__reviews-block-grid
   display: grid
   grid-template-columns: 10% 90%
   grid-template-rows:  80px auto
@@ -135,18 +120,14 @@
   padding:
     left: 9px
     right: 55px
-.room-details-info__wrapper-bullet-list
+.room-details-info-bottom__wrapper-bullet-list
   display: inline-block
   width: 270px
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 5
-  grid-row-end: 6
   padding:
     top: 12px
     left: 10px
     right: 10px
-.room-details-info__title_bullet-list-padding-left
+.room-details-info-bottom__title_bullet-list-padding-left
   padding-left: 22px
 .wrapper-bullet-list
   padding-top: 9px
@@ -155,16 +136,12 @@
     top: 10px
   &::before
     padding-right: 8px
-.room-details-info__wrapper-block-cancel
+.room-details-info-bottom__wrapper-block-cancel
   display: inline-block
-  grid-column-start: 4
-  grid-column-end: 5
-  grid-row-start: 5
-  grid-row-end: 6
   padding:
     top: 13px
     left: 17px
-.room-details-info__title_padding-bottom
+.room-details-info-bottom__title_padding-bottom
   padding-bottom: 17px
 
 .room-details-footer-full-wrapper

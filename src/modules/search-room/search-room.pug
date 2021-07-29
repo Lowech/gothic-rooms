@@ -1,4 +1,5 @@
 include ../mixin-checkbox-buttons/mixin-checkbox-buttons.pug
+include ../mixin-dropdown-wide/dropdown-wide-table.pug
 div.search-room-header-wrapper
   include ../header/header.pug
 div.search-room
@@ -8,7 +9,7 @@ div.search-room
       include ../filter-date-dropdown-input/filter-date-dropdown.pug
     div.dropdown-wide-wrapper
       h2.dropdown-wide-wrapper__title гости
-      include ../dropdown-wide/dropdown-wide-table.pug
+      +dropdown-wide()
     div.range-slider-wrapper
       include ../range-slider/range-slider.pug
     div.checkbox-buttons-wrapper

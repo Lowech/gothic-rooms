@@ -1,6 +1,7 @@
 include ../mixin-input-wide-field/mixin-input-wide-field.pug
 include ../mixin-date-dropdown/mixin-date-dropdown.pug
 include ../mixin-wide-button/mixin-wide-button.pug
+include ../mixin-dropdown-wide/dropdown-wide-table.pug
 div.number-selection
   form
     div.number-selection-wrapper
@@ -21,7 +22,7 @@ div.number-selection
         +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown") 
       div.number-selection__input-lower-wrapper
         label(class="number-selection__label" ) гости
-        include ../dropdown-wide/dropdown-wide.pug
+        +dropdown-wide()(class="dropdown-wide_width-more")
       //div.room-charge
         div.number-amount
           div.number-amount__total-number 9 990₽ х 4 суток

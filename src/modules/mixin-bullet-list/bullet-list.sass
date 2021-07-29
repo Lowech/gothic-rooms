@@ -1,16 +1,18 @@
-.bullet-list
+.bullet-list-wrapper
+  width: 200px
+.bullet-list-block
+  width: 10px
+  height: 10px
+  margin-right: 5px
+  display: inline-block
+  border-radius: 50%
+.bullet-list-text
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: normal
     size: 14px
-  line-height: 24px
+  line-height: 22px
   color: rgba(31, 32, 65, 0.75)
-  letter-spacing: 1px
-  margin-left: 23px
-  text-indent: -24px
-  &::before 
-    content: "•"
-    color: rgba(31, 32, 65, 0.25)
-    font-size: 40px
-    vertical-align: top
-    padding-right: 2px
+  display: inline-block
+  vertical-align: middle
