@@ -1,23 +1,20 @@
 .impressions-room
   display: grid
-  grid-template-columns: 49% 51%
-  grid-template-rows: 20% 80%
-  width: 300px
-  height: 150px
+  grid-template-columns: 155px auto
+  grid-template-rows: 47px auto
+  
 .diagram
   display: inline-block
   position: relative
-  grid-row-start: 1
-  grid-row-end: 3
-  grid-column-start: 1
-  grid-column-end: 2
-  padding-right: 10px
+  grid-column: 1/2
+  grid-row: 1/3
+  
 .diagram__value
   display: flex
   flex-direction: column
   position: absolute
   top: 56px
-  left: 36px
+  left: 34px
 .diagram__number
   text-align: center 
   font:
@@ -31,24 +28,21 @@
   font:
     family: 'Montserrat' , Arial, sans-serif
     style: normal
-    weight: bold
+    weight: normal
     size: 12px
   line-height: 15px
   text-transform: uppercase
   color: #BC9CFF
 .diagram__chart
-  width: 250px
+  width: 244px
   height: 127px
-  padding-top: 15px
+  padding-top: 16px 
 .impressions-room__appraisal
   grid-column-start: 2
   grid-column-end: 3
   grid-row-start: 2
   grid-row-end: 3
-  padding:
-    top: 19px
-    left: 14px
-  width: 200px
+  
 .bullet-list-block_marker-color-peach
   background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%)
 .bullet-list-block_marker-color-green

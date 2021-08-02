@@ -1,11 +1,18 @@
 .bullet-list-wrapper
-  width: 200px
+  display: grid
+  grid-auto-flow: column
+  align-items: baseline
+  justify-content: start
+  width: 255px
+  padding-bottom: 2px
 .bullet-list-block
+  display: inline-block
   width: 10px
   height: 10px
-  margin-right: 5px
-  display: inline-block
   border-radius: 50%
+  background-color: rgba(31, 32, 65, 0.25)
+  margin-right: 4px
+  
 .bullet-list-text
   font:
     family: 'Montserrat' , Arial, sans-serif
@@ -14,5 +21,3 @@
     size: 14px
   line-height: 22px
   color: rgba(31, 32, 65, 0.75)
-  display: inline-block
-  vertical-align: middle
