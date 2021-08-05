@@ -3,18 +3,22 @@
   border-radius: 22px
   width: 320px
   height: 44px
-  font-style: normal
-  font-weight: bold
-  font-size: 12px
+  font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
+    weight: bold
+    size: 12px
   line-height: 15px
   text-align: center
   text-transform: uppercase
   color: #FFFFFF
-  letter-spacing: 0.8px
   border: none
+.wide-button:hover
+  opacity: 0.5
 .wide-button-block
   display: inline-block
   position: relative
+
 .wide-button-block::after
   position: absolute
   content: url(../src/modules/mixin-wide-button/img/arrow_forward_white.png)

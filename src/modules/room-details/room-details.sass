@@ -164,6 +164,9 @@
 
 .room-details-info__title_bullet-list-padding-left
   padding-left: 22px
+@media screen and ( max-width: 740px )
+  .room-details-info__title_bullet-list-padding-left
+    padding-left: 0
 
 .room-details-info__wrapper-block-cancel
   display: flex
@@ -172,21 +175,5 @@
 .room-details-info__title_padding-bottom
   padding-bottom: 18px
   
-.room-details-navigation-footer-wrapper
-  border-top: 1px solid rgba(31, 32, 65, 0.1)
-  display: grid
-  grid-template-columns: auto
-  grid-template-rows: 100px auto 100px
-@media screen and ( max-width:  886px)
-  .room-details-navigation-footer-wrapper
-    grid-template-columns: minmax(20px, 9%) auto 8%
-    grid-template-rows: 50px auto 50px
-
-.room-details-navigation-footer-block
-  grid-row: 2/3
-@media screen and ( max-width:  886px)
-  .room-details-navigation-footer-block
-    grid-column: 2/3
-
 .room-details-footer-full-wrapper
   border-top: 1px solid rgba(31, 32, 65, 0.1)

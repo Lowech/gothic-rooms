@@ -1,3 +1,5 @@
 mixin radio-buttons(name,id,connection)
-  input(id=id type="radio" name="choice")
-  label(class!=attributes.class for=connection)=name
+  div.radio-buttons-wrapper.js-radio-buttons-wrapper
+    input(id=id type="radio" name="choice" class="radio-buttons-input")
+    label(class!=attributes.class for=connection)=name
+    div.radio-buttons-input-background.js-radio-buttons-input-background

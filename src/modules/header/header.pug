@@ -1,5 +1,5 @@
 include ../mixin-button/mixin-button-narrow.pug
-include ../mixin-button/mixin-button-broad.pug
+include ../mixin-button/mixin-small-button.pug
 header.header
   div.logo-wrapper
     include ../logo/logo.pug
@@ -8,5 +8,5 @@ header.header
   div.nav-wrapper-navBurger
     include ../navBurger/navBurger.pug
   div.button-wrapper
-    +button-broad('войти', '../modules/page-login/page-login.html')(class="button-broad")
+    +small-button('войти', '../modules/page-login/page-login.html')(class="small-button")
     +button-narrow('зарегистрироваться', 'page-login/page-login.pug')(class="button-narrow")

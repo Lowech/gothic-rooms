@@ -16,10 +16,10 @@ div.number-selection
         span.room-rate__title в сутки
       div.number-selection__input-left-wrapper
         label(class="number-selection__label" ) прибытие
-        +date-dropdown("number" , "ДД.ММ.ГГГГ")(class="date-dropdown") 
+        +date-dropdown("text" , "ДД.ММ.ГГГГ", id="start")( class="date-dropdown" class="datepicker-here" ) 
       div.number-selection__input-right-wrapper
         label(class="number-selection__label" ) выезд
-        +date-dropdown("number", "ДД.ММ.ГГГГ")(class="date-dropdown") 
+        +date-dropdown("text", "ДД.ММ.ГГГГ", id="end")(class="date-dropdown" class="datepicker-here" ) 
       div.number-selection__input-lower-wrapper
         label(class="number-selection__label" ) гости
         +dropdown-wide()(class="dropdown-wide_width-more")

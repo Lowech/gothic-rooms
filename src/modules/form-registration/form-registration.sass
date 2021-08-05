@@ -1,7 +1,7 @@
 .form-registration
   display: grid
-  grid-template-columns: 8% 92%
-  grid-template-rows: repeat(20, 5%)
+  grid-template-columns: 8% 31% auto
+  grid-template-rows: 39px 50px 53px 53px 44px 83px 129px 46px 50px
   width: 380px
   height: 646px
   background: #FFFFFF
@@ -11,102 +11,85 @@
   border-radius: 4px
 
 .form-registration__title-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 2
-  grid-row-end: 3
-  padding:
-    top: 7px
+  grid-column: 2/4
+  grid-row: 2/3
+  
+
 .form-registration-title
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 24px
   line-height: 29px
-  letter-spacing: 1.6px
   color: #1F2041
 
 .input-name-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 3
-  grid-row-end: 4
-  padding:
-    top: 24px
+  grid-column: 2/4
+  grid-row: 3/4
+  
 
 .input-surname-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 5
-  grid-row-end: 6
-  padding:
-    top: 14px
-.input-radio-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 7
-  grid-row-end: 8
+  grid-column: 2/4
+  grid-row: 4/5
+  
+
+.input-radio-wrapper-left
+  grid-column: 2/3
+  grid-row: 5/6
+
+.input-radio-wrapper-right
+  grid-column: 3/4
+  grid-row: 5/6
 
 .input-date-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 8
-  grid-row-end: 9
-  padding:
-    top: 14px
+  grid-column: 2/4
+  grid-row: 6/7
+  
 .input-date__label
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: bold
     size: 12px
   line-height: 15px
-  letter-spacing: 0.8px
   text-transform: uppercase
   color: #1F2041
-.input-wide-field_padding-top
-  margin:
-    top: 4px
+
+.input-wide-field_margin-top
+  margin-top: 4px
+
 .input-login-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 11
-  grid-row-end: 12
-  padding:
-    top: 2px
-.input-wide-field_padding-top-more
-  margin:
-    top: 10px
+  grid-column: 2/4
+  grid-row: 7/8
+  
+.input-wide-field_margin-top-more
+  margin-top: 11px
+
 .notifications-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 15
-  grid-row-end: 16
+  grid-column: 2/4
+  grid-row: 8/9
 
 .form-registration__button-narrow-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 16
-  grid-row-end: 17
-  padding:
-    top: 14px
-    
+  grid-column: 2/4
+  grid-row: 9/10
+  
 .form-registration__footer
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 18
-  grid-row-end: 19
+  grid-column: 2/4
+  grid-row: 10/11
   display: flex
   justify-content: space-between
   align-items: center
   height: 92px
+
 .form-registration__link
   font:
+    family: 'Montserrat' , Arial, sans-serif
     style: normal
     weight: normal
     size: 14px
   line-height: 18px
-  letter-spacing: 0.7px
   color: #000000
+
 .form-registration__button-wrapper
-  padding:
-    right: 28px
+ padding-right: 27px

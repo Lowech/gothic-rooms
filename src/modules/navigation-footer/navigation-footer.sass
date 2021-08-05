@@ -1,3 +1,19 @@
+.navigation-wrapper
+  border-top: 1px solid rgba(31, 32, 65, 0.1)
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: 100px auto 100px
+@media screen and ( max-width:  886px)
+  .navigation-wrapper
+    grid-template-columns: minmax(20px, 9%) auto 8%
+    grid-template-rows: 50px auto 50px
+
+.navigation-footer-block
+  grid-row: 2/3
+@media screen and ( max-width:  886px)
+  .navigation-footer-block
+    grid-column: 2/3
+
 .navigation-footer
   display: grid
   grid-template-columns: minmax(1%, 10%) minmax(auto, 21%) minmax(130px, 14%) minmax(130px, 14%) minmax(130px, 14%) minmax(280px, auto)
