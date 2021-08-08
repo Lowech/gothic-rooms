@@ -13,14 +13,15 @@ include mixin-rate-button/rate-button.pug
 include mixin-bullet-list/bullet-list.pug
 include mixin-like-button/mixin-like-button.pug
 include mixin-dropdown-wide/dropdown-wide-table.pug
+include mixin-user-name-picture/mixin-user-name-picture.pug
+include mixin-like-button/mixin-like-button.pug
+include mixin-review/mixin-review.pug
 
 div.ui-kit-form-elements-wrapper
   div.block-wrapper
     +small-button-background-present('CLICK ME')(class="small-button-background-present")
   div.block-wrapper
     +button-click-background('CLICK ME')(class="button-click-background")
-  div.block-wrapper
-    +small-button('CLICK ME', '../modules/page-login/page-login.html')(class="small-button small-button_background-less")
   div.block-wrapper
     +small-button-no-background('index.html', 'CLICK ME')(class="small-button-no-background")
   div.block-wrapper
@@ -37,10 +38,10 @@ div.ui-kit-form-elements-wrapper
     +input-wide-field("Email","Email")(class="input-wide-field")
     +input-wide-field("text","This is pretty awesome")(class="input-wide-field input-wide-field_focus-hover")
   div.block-wrapper
-    +input-wide-field("text","ДД.ММ.ГГГГ")(class="input-wide-field datepicker-here")
+    +input-wide-field("text","ДД.ММ.ГГГГ")(class="input-wide-field ")
   div.block-wrapper
-    +date-dropdown("text", "ДД.ММ.ГГГГ")(class="date-dropdown datepicker-here")
-    +date-dropdown("text", "19.08.2019")(class="date-dropdown datepicker-here")
+    +date-dropdown("text", "ДД.ММ.ГГГГ","start")(class="date-dropdown ")
+    +date-dropdown("text", "19.08.2019", "end")(class="date-dropdown ")
   div.block-wrapper
     include filter-date-dropdown-input/filter-date-dropdown.pug
   div.block-wrapper
@@ -49,13 +50,7 @@ div.ui-kit-form-elements-wrapper
   div.block-wrapper
     include toggle/toggle.pug
   div.block-wrapper
-    +like-button("./src/modules/mixin-like-button/img/favorite.png", 12)
-    include mixin-like-button/faint-copy-like-button.pug
-  div.block-wrapper
-    ul.wrapper
-      +bullet-list("Нельзя с питомцами")(class="bullet-list")
-      +bullet-list("Без вечеринок и мероприятий")(class="bullet-list")
-      +bullet-list("Время прибытия — после 13:00,а выезд до 12:00")(class="bullet-list")
+    +like-button("./src/modules/mixin-like-button/img/favorite_border.png", 11)
   div.block-wrapper
     include expandable-checkbox-list/expandable-checkbox-list.pug
   div.block-wrapper
@@ -68,8 +63,8 @@ div.ui-kit-form-elements-wrapper
   div.block-wrapper
     +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star_border.png")(class="rate-button__img")
     +rate-button("src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png", "src/modules/mixin-rate-button/img/star.png")
-  div.block-wrapper
-    include dropdown-less/dropdown-less.pug
+  div.block-wrapper-width-less
+    +dropdown-wide(class="dropdown-wide__table_width-more")
   div.block-wrapper
     include dropdown-less/dropdown-less-table.pug
   div.block-wrapper
@@ -77,11 +72,25 @@ div.ui-kit-form-elements-wrapper
   div.block-wrapper
     include card-slider-main/card-slider-main.pug
   div.block-wrapper
-    include block-cancel/block-cancel.pug
-  div.block-wrapper
-    ul.wrapper
-      +bullet-list("Великолепно")(class="bullet-list")
-      +bullet-list("Хорошо")(class="bullet-list")
-      +bullet-list("Удовлетворительно")(class="bullet-list")
-      +bullet-list("Разочарован")(class="bullet-list")
+    div.wrapper-bullet-list-block
+      +bullet-list("Нельзя с питомцами")(class="bullet-list-block bullet-list-block_margin-right")
+      +bullet-list("Без вечеринок и мероприятий")(class="bullet-list-block bullet-list-block_margin-right")
+      +bullet-list("Время прибытия — после 13:00, а выезд до 12:00")(class="bullet-list-block bullet-list-block_margin-right")
   //include props/props.pug
+div.ui-kit-components-wraper
+  div.room-details-info__reviews-block-grid
+    div.reviews__wrapper
+      +user-name-picture("src/modules/mixin-user-name-picture/img/image-user1.png", "Мурад Сарафанов","5 дней назад")
+    div.reviews__like-wrapper
+      +like-button("./src/modules/mixin-like-button/img/favorite_border.png", 11)
+    div.reviews__text-wrapper
+      +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+  include number-selection/number-selection.pug
+  include form-number-selection-total/form-number-selection-total.pug
+  include form-login/form-login.pug
+  include form-registration/form-registration.pug
+  include header/header.pug
+  include header-user-name/header-user-name.pug
+  include navigation-footer/navigation-footer.pug
+  include footer-full/footer-full.pug
+  include footer-rectangle/footer-rectangle.pug

@@ -1,24 +1,23 @@
 .footer-rectangle
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-content: center
-  width: 768px
+  display: grid
+  grid-template-columns: minmax(10px, 25%) auto minmax(10px, 10%)
+  grid-template-rows: minmax(10px, 32%) auto minmax(10px, 10%)
+  max-width: 768px
   height: 367px
   background: #FFFFFF
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
 .footer-rectangle-wrapper
-  display: flex
-  flex-direction: column
+  grid-column: 2/3
+  grid-row: 2/3
+  display: grid
+  grid-template-columns: minmax(auto, 25%) minmax(11px, 11px) minmax(240px, auto)
+  grid-template-rows: 62px 44px
 .footer-rectangle-logo-wrapper
-  display: flex
-  justify-content: center
-  padding-bottom: 21px
+  grid-column: 3/4
+  grid-row: 1/2
 .footer-rectangle-footer-copyright-text-wrapper
-  padding-right: 8px
+  grid-column: 1/4
+  grid-row: 2/3
 .footer-rectangle-social-media-icons-wrapper
-  display: flex
-  justify-content: center
-  padding-top: 26px
-  padding-right: 5px
-  
+  grid-column: 2/3
+  grid-row: 3/4

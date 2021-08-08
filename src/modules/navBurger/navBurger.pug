@@ -1,6 +1,11 @@
+include ../mixin-button/mixin-button-narrow.pug
+include ../mixin-button/mixin-small-button.pug
 div.navBurger.js-navBurger
   div.navBurger__border
   div.navBurger__border
   div.navBurger__border
 div.navBurger__nav.js-navBurger__nav
   include ../header-nav/nav.pug
+  div.navBurger__button
+    +small-button('войти', '../modules/page-login/page-login.html')(class="small-button")
+    +button-narrow('зарегистрироваться', 'page-login/page-login.pug')(class="button-narrow")

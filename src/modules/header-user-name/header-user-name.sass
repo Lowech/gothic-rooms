@@ -1,27 +1,31 @@
 .header-user-name
   display: grid
-  grid-template-rows: auto
-  grid-template-columns: 9% 39% 34% 18%
-  max-width: 1980px
+  grid-template-columns:  minmax(auto, 10%) minmax(auto, 38%) minmax(478px, 34%) minmax(18%, auto)
+  grid-template-rows: 100%
+  max-width: 1920px
   min-width: 320px
   background-color: #FFFFFF
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+@media screen and ( max-width:900px  )
+  .header-user-name
+    grid-template-columns: minmax(auto, 1%) minmax(auto, 27%) minmax(auto, 485px) minmax(auto, auto)
 .header-user-name-logo-wrapper
-  grid-column-start: 2
-  grid-column-end: 3
+  grid-column: 2/3
   padding-top: 17px
   padding-bottom: 11px
-  margin-left: 12px
+  
 .header-user-name-nav-wrapper
-  grid-column-start: 3
-  grid-column-end: 4
+  grid-column: 3/4
   padding-top: 29px
   padding-bottom: 11px
+@media screen and ( max-width:900px  )
+  .header-user-name-nav-wrapper
+    display: none
 .nav-wrapper_margin-left
   margin-left: 10px
+
 .user-name-wrapper
-  grid-column-start: 4
-  grid-column-end: 5
+  grid-column: 4/5
   padding-top: 21px
   padding-bottom: 11px
 .user-name-wrapper_margin-left
