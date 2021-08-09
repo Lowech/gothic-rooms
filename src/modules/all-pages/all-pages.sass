@@ -1,0 +1,31 @@
+.all-pages
+  display: grid
+  grid-template-columns: minmax(10px, 30%) auto minmax(10px, 30%)
+  grid-template-rows:  minmax(20px, 10%) auto minmax(20px, 10%)
+
+.all-pages-contains
+  grid-column: 2/3
+  grid-row: 2/3
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  box-sizing: border-box
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
+  border-radius: 4px
+  
+.all-pages-list
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  height: 200px
+
+.all-pages-list__link
+  font:
+    family: 'Montserrat' , Arial, sans-serif
+    style: normal
+    weight: bold
+    size: 14px
+  text-transform: uppercase
+  color: #BC9CFF
+
+.all-pages-list__link:hover
+  opacity: 0.5
