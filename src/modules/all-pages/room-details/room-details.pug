@@ -1,0 +1,61 @@
+include ../../mixin-room-amenities/mixin-room-amenities.pug
+include ../../mixin-number-reviews/mixin-number-reviews.pug
+include ../../all-button/mixin-like-button/mixin-like-button.pug
+include ../../mixin-review/mixin-review.pug
+include ../../mixin-user-name-picture/mixin-user-name-picture.pug
+include ../../mixin-bullet-list/bullet-list.pug
+
+header.room-details-header-wrapper
+  include ../../all-header/header/header.pug
+div.room-details-wrapper
+  div.room-details-background
+    img.room-details__img1(src="./src/modules/all-pages/room-details/img/room-details-image1.jpg" alt="img")
+    img.room-details__img2(src="./src/modules/all-pages/room-details/img/room-details-image2.jpg" alt="img")
+    img.room-details__img3(src="./src/modules/all-pages/room-details/img/room-details-image3.jpg" alt="img")
+div.room-details-info-wrapper
+  main.room-details-info
+    div.room-details-info__wrapper-room-details
+      h2.room-details-info__title Сведения о номере
+      div.room-details-block
+        +room-amenities("src/modules/mixin-room-amenities/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
+      div.room-details-block
+        +room-amenities("src/modules/mixin-room-amenities/img/location_city.png", "Удобство","Окно в каждой из спален")
+      div.room-details-block
+        +room-amenities("src/modules/mixin-room-amenities/img/whatshot.png", "Уют","Номер оснащён камином")
+    div.room-details-info__wrapper-impressions-room
+      h2.room-details-info__title.room-details-info__title-padding-left Впечатления от номера
+      include ../../impressions-room/impressions-room.pug
+    div.room-details-info__wrapper-form-number-selection-total
+      include ../../form-number-selection-total/form-number-selection-total.pug
+    div.room-details-info__reviews-block
+      div.room-details-info__title_padding-left
+        h2.room-details-info__title Отзывы посетителей номера
+        div.reviews__number-wrapper
+          +number-reviews("2", "отзыва")
+      div.room-details-info__reviews-block-grid
+        div.reviews__wrapper
+          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user1.png", "Мурад Сарафанов","5 дней назад")
+        div.reviews__like-wrapper
+          +like-button("./src/modules/all-button/mixin-like-button/img/favorite_border.png", 11)
+        div.reviews__text-wrapper
+          +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+      div.room-details-info__reviews-block-grid
+        div.reviews__wrapper
+          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user2.jpg", "Патрисия Стёклышкова","Неделю назад")
+        div.reviews__like-wrapper
+          +like-button("./src/modules/all-button/mixin-like-button/img/favorite_border.png", 2)
+        div.reviews__text-wrapper
+          +review("Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+    div.room-details-info-block
+      div.room-details-info__wrapper-bullet-list
+        h2.room-details-info__title.room-details-info__title_bullet-list-padding-left Правила
+        div.wrapper-bullet-list-block
+          +bullet-list("Нельзя с питомцами")(class="bullet-list-block bullet-list-block_margin-right")
+          +bullet-list("Без вечеринок и мероприятий")(class="bullet-list-block bullet-list-block_margin-right")
+          +bullet-list("Время прибытия — после 13:00, а выезд до 12:00")(class="bullet-list-block bullet-list-block_margin-right")
+      div.room-details-info__wrapper-block-cancel
+        h2.room-details-info__title.room-details-info__title_padding-bottom Отмена
+        include ../../block-cancel/block-cancel.pug
+footer.room-details-navigation-footer-wrapper
+  include ../../all-footer/navigation-footer/navigation-footer.pug
+include ../../all-footer/footer-full/footer-full.pug

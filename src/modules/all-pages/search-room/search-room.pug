@@ -1,0 +1,48 @@
+include ../../mixin-checkbox-buttons/mixin-checkbox-buttons.pug
+include ../../mixin-dropdown-wide/dropdown-wide-table.pug
+div.search-room-header-wrapper
+  include ../../all-header/header/header.pug
+div.search-room
+  div.search-room__navigation
+    div.filter-date-dropdown-wrapper
+      h2.filter-date-dropdown-wrapper__title даты пребывания в отеле
+      include ../../filter-date-dropdown-input/filter-date-dropdown.pug
+    div.dropdown-wide-wrapper
+      h2.dropdown-wide-wrapper__title гости
+      +dropdown-wide()
+    div.range-slider-wrapper
+      include ../../range-slider/range-slider.pug
+    div.checkbox-buttons-wrapper
+      h2.checkbox-buttons-wrapper__title правила дома
+      div.checkbox-buttons-container
+        +checkbox-buttons("Можно курить")(class="checkbox-label")
+        +checkbox-buttons("Можно с питомцами", "checked")(class="checkbox-label")
+        +checkbox-buttons("Можно пригласить гостей (до 10 человек)", "checked")(class="checkbox-label")
+    div.rich-heckbox-buttons-wrapper
+      h2.rich-heckbox-buttons__title доступность
+      include ../../rich-heckbox-buttons/rich-heckbox-buttons.pug
+    div.dropdown-less-wrapper
+      h2.dropdown-less-wrapper__title удобства номера
+      include ../../dropdown-less/dropdown-less-table.pug
+    div.expandable-checkbox-list-wrapper
+      include ../../expandable-checkbox-list/expandable-checkbox-list.pug
+  div.search-room__title-block
+    h2.search-room__title Номера, которые мы для вас подобрали
+  div.search-room__img
+    include ../../card-slider-folder/card-slider-main/card-slider-main.pug
+    include ../../card-slider-folder/card-slider0/card-slider.pug
+    include ../../card-slider-folder/card-slider1/card-slider.pug
+    include ../../card-slider-folder/card-slider2/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider3/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider4/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider5/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider6/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider7/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider8/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider9/card-slider-arrow.pug
+    include ../../card-slider-folder/card-slider10/card-slider-arrow.pug  
+  div.pagination-wrapper
+    include ../../pagination/pagination.pug  
+footer.search-room-footer-navigation-footer-wrapper
+  include ../../all-footer/navigation-footer/navigation-footer.pug
+include ../../all-footer/footer-full/footer-full.pug

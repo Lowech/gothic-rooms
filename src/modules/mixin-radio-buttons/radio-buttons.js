@@ -5,12 +5,11 @@ let divCircle =document.createElement('div');
 $(".js-radio-buttons-wrapper").on("click",addCheck)
 
 function addCheck(event){
-    for(let item of document.querySelectorAll('.radio-buttons-active')){
-          item.classList.remove('radio-buttons-active')
-        }
-    if(!this.lastElementChild.previousElementSibling.classList.contains('radio-buttons-active')){
-           event.currentTarget.lastElementChild.previousElementSibling.classList.add('radio-buttons-active')
-        }
-    $(event.currentTarget.lastElementChild).append(divCircle);       
+    if($(".js-radio-buttons-input-background").hasClass('radio-buttons-input-background_background-color')){
+            $(".js-radio-buttons-input-background").removeClass('radio-buttons-input-background_background-color'); 
+    }
+    $(event.currentTarget.lastElementChild).addClass('radio-buttons-input-background_background-color');
+         
+$(event.currentTarget.lastElementChild).append(divCircle);     
 }
 

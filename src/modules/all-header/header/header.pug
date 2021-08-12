@@ -1,0 +1,12 @@
+include ../../all-button/mixin-button/mixin-button-narrow.pug
+include ../../all-button/mixin-button/mixin-small-button.pug
+header.header
+  div.logo-wrapper
+    include ../../logo/logo.pug
+  div.nav-wrapper
+    include ../../all-header/header-nav/nav.pug
+  div.nav-wrapper-navBurger
+    include ../../all-header/navBurger/navBurger.pug
+  div.button-wrapper
+    +small-button('войти', '../modules/page-login/page-login.html')(class="small-button")
+    +button-narrow('зарегистрироваться', 'page-login/page-login.pug')(class="button-narrow")

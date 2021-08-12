@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-//const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const  webpack  = require('webpack');
@@ -61,14 +61,14 @@ module.exports={
             }
         }),
         new CleanWebpackPlugin(),//очищает dist от предыдущих версий файлов
-        //new CopyWebpackPlugin(//копирует ico(картинку) 
-        //    {
-        //patterns:[
-         //           {
-         //       from: path.resolve(__dirname, 'src/tree.ico'),//где находится
-        //        to: path.resolve(__dirname, 'dist')//куда скопировать
-        //    }],} 
-        //),
+        new CopyWebpackPlugin(//копирует ico(картинку) 
+            {
+        patterns:[
+                    {
+              from: path.resolve(__dirname, 'src/favicon.ico'),//где находится
+               to: path.resolve(__dirname, 'dist')//куда скопировать
+            }],} 
+        ),
         new MiniCssExtractPlugin({//собирает все файлы css в один
             filename:'[name].[id].bundle.css'
         }),
@@ -109,11 +109,25 @@ module.exports={
             },
             {
                 test:/\.(png|gif|svg|jpg)$/,//форматы картинок
-                use:['file-loader']// загрузчик данных картинок
+                use:[
+                    {
+                        loader:'file-loader',// загрузчик данных картинок 
+                        options: {
+                            name: "img/[name].[ext]"//общая папка для картинок при сборки в dist
+                        }
+                    }
+              ]
             },
             {
                 test:/\.(ttf|woff|woff2|eot)$/,//форматы картинок
-                use:['file-loader']// загрузчик данных картинок
+                use:[
+                    {
+                        loader:'file-loader',// загрузчик данных шрифтов 
+                        options: {
+                            name: "fonts/[name].[ext]"//общая папка для шрифтов при сборки в dist
+                        }
+                    }
+                ]
             }
         ]
     }
