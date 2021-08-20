@@ -3,23 +3,23 @@ include ../../mixin-pictures-stars/pictures-stars.pug
 div.card-slider
   div.card-slider__img-wrapper.js-card-slider__img-wrapper
     div.card-slider__img__scroll
-      img.card-slider__img( src="./src/modules/card-slider-folder/card-slider2/img/card-image2.jpg" alt="img")
-      img.card-slider__img( src="./src/modules/card-slider-folder/card-slider2/img/card-image.jpg" alt="img")
-      img.card-slider__img( src="./src/modules/card-slider-folder/card-slider2/img/card-image1.jpg" alt="img")
-      img.card-slider__img( src="./src/modules/card-slider-folder/card-slider2/img/card-image2.jpg" alt="img")
+      img.card-slider__img( src=require("/modules/card-slider-folder/card-slider2/img/card-image15.jpg") alt="img")
+      img.card-slider__img( src=require("/modules/card-slider-folder/card-slider2/img/card-image1.jpg") alt="img")
+      img.card-slider__img( src=require("/modules/card-slider-folder/card-slider2/img/card-image1.jpg") alt="img")
+      img.card-slider__img( src=require("/modules/card-slider-folder/card-slider2/img/card-image15.jpg") alt="img")
     ul.card-slider__cicle-wrapper
       li.card-slider__cicle.card-slider__cicle_backgroundColor-white
       li.card-slider__cicle
       li.card-slider__cicle
       li.card-slider__cicle
     div.card-slider__arrow-right-block.js-card-slider__arrow-right-block
-      img.card-slider__arrow-right(src="./src/modules/card-slider-folder/card-slider-main/img/arrow-left.png" alt="img")
+      img.card-slider__arrow-right(src=require("/modules/card-slider-folder/card-slider-main/img/arrow-left.png") alt="img")
     div.card-slider__arrow-left-block.js-card-slider__arrow-left-block
-      img.card-slider__arrow-left(src="./src/modules/card-slider-folder/card-slider-main/img/arrow-left.png" alt="img")
+      img.card-slider__arrow-left(src=require("/modules/card-slider-folder/card-slider-main/img/arrow-left.png") alt="img")
   a.card-slider-link(href="index.html")
     div.card-slider__characteristics-wrapper
       span.card-slider__sign № <span class="card-slider__number">856</span><span class="card-slider__category">люкс</span>
       span.card-slider__sum 7 300₽ <span class="card-slider__sum-text">в сутки</span>
     div.card-slider__reviews-wrapper
-      +pictures-stars("src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png")(class="rate-button__img")
+      +pictures-stars(require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"))(class="rate-button__img")
       +number-reviews("19", "Отзывов")

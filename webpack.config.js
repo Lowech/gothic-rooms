@@ -8,6 +8,7 @@ const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 const  webpack  = require('webpack');
 
 
+
 const isDev= process.env.NODE_ENV==='development';//выставляем проверку на сборку приложения development или production
 const isProd=!isDev;
 
@@ -27,8 +28,6 @@ const optimization =()=>{
     return config
 }
 
-
-
 module.exports={
     context:path.resolve(__dirname,'src'),//название папки откуда webpack забирает файлы
     mode:'development',//модель сборки webpack, бывает еще production
@@ -45,6 +44,7 @@ module.exports={
         overlay: true,
         open: true
     },
+    
     plugins:[
         new HTMLWebpackPlugin({
             template:'./index.pug',//названия файлов в папке src
@@ -54,8 +54,41 @@ module.exports={
             }
         }),
         new HTMLWebpackPlugin({
-            template:'./modules/pro.pug',//названия файлов в папке src
-            filename: 'modules/pro.html',
+            template:'./modules/all-pages/ui-kit-form-elements.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/ui-kit-form-elements.html',
+            minify:{
+                collapseWhitespace:isProd// оптимизация html
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/all-pages/landing-page/landing-page.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/landing-page/landing-page.html',
+            minify:{
+                collapseWhitespace:isProd// оптимизация html
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/all-pages/page-login/page-login.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/page-login/page-login.html',
+            
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/all-pages/page-registration/page-registration.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/page-registration/page-registration.html',
+            minify:{
+                collapseWhitespace:isProd// оптимизация html
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/all-pages/search-room/search-room.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/search-room/search-room.html',
+            minify:{
+                collapseWhitespace:isProd// оптимизация html
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./modules/all-pages/room-details/room-details.pug',//названия файлов в папке src
+            filename: 'modules/all-pages/room-details/room-details.html',
             minify:{
                 collapseWhitespace:isProd// оптимизация html
             }
@@ -93,7 +126,10 @@ module.exports={
             },
             {
                 test:/\.pug$/,//  препроцессор HTML
-                loader:'pug-loader'// загрузчик pug
+                loader:'pug-loader',// загрузчик pug
+                options: {
+                    pretty: true
+                  },
             },
             {
                 test:/\.sass$/,//препроцессор css
@@ -113,7 +149,8 @@ module.exports={
                     {
                         loader:'file-loader',// загрузчик данных картинок 
                         options: {
-                            name: "img/[name].[ext]"//общая папка для картинок при сборки в dist
+                            name: "img/[name].[ext]",//общая папка для картинок при сборки в dist
+                            esModule: false,
                         }
                     }
               ]

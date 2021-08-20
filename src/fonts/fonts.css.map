@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,UAAU;EACR,WAAW,EAAE,oBAAoB;EACjC,GAAG,EAAE,sCAAsC,CAAC,cAAc,EAAE,qCAAqC,CAAC,kBAAkB,EAAE,0CAA0C,CAAC,aAAa;;;AAChL,UAAU;EACR,WAAW,EAAE,oBAAoB;EACjC,GAAG,EAAE,mCAAmC,CAAC,cAAc,EAAE,kCAAkC,CAAC,kBAAkB,EAAE,uCAAuC,CAAC,aAAa",
-    "sources": [
-        "fonds.sass"
-    ],
-    "names": [],
-    "file": "fonds.css"
-}
