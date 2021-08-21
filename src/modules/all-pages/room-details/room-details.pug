@@ -9,19 +9,19 @@ header.room-details-header-wrapper
   include ../../all-header/header/header.pug
 div.room-details-wrapper
   div.room-details-background
-    img.room-details__img1(src="./src/modules/all-pages/room-details/img/room-details-image1.jpg" alt="img")
-    img.room-details__img2(src="./src/modules/all-pages/room-details/img/room-details-image2.jpg" alt="img")
-    img.room-details__img3(src="./src/modules/all-pages/room-details/img/room-details-image3.jpg" alt="img")
+    img.room-details__img1(src=require("/modules/all-pages/room-details/img/room-details-image1.jpg") alt="img")
+    img.room-details__img2(src=require("/modules/all-pages/room-details/img/room-details-image2.jpg") alt="img")
+    img.room-details__img3(src=require("/modules/all-pages/room-details/img/room-details-image3.jpg") alt="img")
 div.room-details-info-wrapper
   main.room-details-info
     div.room-details-info__wrapper-room-details
       h2.room-details-info__title Сведения о номере
       div.room-details-block
-        +room-amenities("src/modules/mixin-room-amenities/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
+        +room-amenities(require("/modules/mixin-room-amenities/img/insert_emoticon.png"), "Комфорт","Шумопоглощающие стены")
       div.room-details-block
-        +room-amenities("src/modules/mixin-room-amenities/img/location_city.png", "Удобство","Окно в каждой из спален")
+        +room-amenities(require("/modules/mixin-room-amenities/img/location_city.png"), "Удобство","Окно в каждой из спален")
       div.room-details-block
-        +room-amenities("src/modules/mixin-room-amenities/img/whatshot.png", "Уют","Номер оснащён камином")
+        +room-amenities(require("/modules/mixin-room-amenities/img/whatshot.png"), "Уют","Номер оснащён камином")
     div.room-details-info__wrapper-impressions-room
       h2.room-details-info__title.room-details-info__title-padding-left Впечатления от номера
       include ../../impressions-room/impressions-room.pug
@@ -34,16 +34,16 @@ div.room-details-info-wrapper
           +number-reviews("2", "отзыва")
       div.room-details-info__reviews-block-grid
         div.reviews__wrapper
-          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user1.png", "Мурад Сарафанов","5 дней назад")
+          +user-name-picture(require("/modules/mixin-user-name-picture/img/image-user1.png"), "Мурад Сарафанов","5 дней назад")
         div.reviews__like-wrapper
-          +like-button("./src/modules/all-button/mixin-like-button/img/favorite_border.png", 11)
+          +like-button(require("/modules/all-button/mixin-like-button/img/favorite_border.png"), 11)
         div.reviews__text-wrapper
           +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
       div.room-details-info__reviews-block-grid
         div.reviews__wrapper
-          +user-name-picture("src/modules/mixin-user-name-picture/img/image-user2.jpg", "Патрисия Стёклышкова","Неделю назад")
+          +user-name-picture(require("/modules/mixin-user-name-picture/img/image-user2.jpg"), "Патрисия Стёклышкова","Неделю назад")
         div.reviews__like-wrapper
-          +like-button("./src/modules/all-button/mixin-like-button/img/favorite_border.png", 2)
+          +like-button(require("/modules/all-button/mixin-like-button/img/favorite_border.png"), 2)
         div.reviews__text-wrapper
           +review("Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
     div.room-details-info-block

@@ -14,9 +14,17 @@
 .datepicker--nav
   min-height: 52px
   border-bottom: none
-.datepicker--nav-action
+div[data-action=prev]
   width: 57px
-
+  &::before
+    content: url(../src/modules/calendar/img/arrow_back.png)
+div[data-action=next]
+  width: 57px
+  &::before
+    content: url(../src/modules/calendar/img/arrow_forward.png)
+div > svg
+  display: none
+  
 .datepicker--nav-title
   font:
     family: 'Montserrat' , Arial, sans-serif

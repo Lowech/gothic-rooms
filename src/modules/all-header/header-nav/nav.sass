@@ -1,6 +1,8 @@
 .nav
-  display: inline-block
-
+  display: grid
+  grid-template-columns: minmax(66px, 10%) minmax(94px, 10%) minmax(92px, 10%) minmax(82px, 10%) minmax(120px, 10%)
+  align-items: center
+  height: 20px
 .nav__item
   color: rgba(31, 32, 65, 0.5)
   font:
@@ -9,7 +11,7 @@
     weight: normal
     size: 14px
   line-height: 10px
-  margin-left: 20px
+  
   &:hover
     font:
       family: 'Montserrat' , Arial, sans-serif
@@ -18,10 +20,9 @@
       size: 14px
     line-height: 17px
     color: rgba(31, 32, 65, 0.75)
-    
+.wrapperImgLink  
+  display: inline-block  
 .nav__item_margin-less
   margin-left: 7px
-.nav__item_margin-more
-  margin-left: 26px
-.nav__item_margin
-  margin-left: 7px
+.nav__item_margin-left
+  margin-left: 4px

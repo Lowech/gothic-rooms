@@ -22,14 +22,14 @@ function plusMinusLike(event){
 }
 function colorAddRemove(event){
 if(event.currentTarget.classList.contains('like-button_not-active-color')){
-        $(event.currentTarget.firstChild).attr("src", "./src/modules/all-button/mixin-like-button/img/favorite.png");
+        $(event.currentTarget.firstElementChild).attr("src", require("/modules/all-button/mixin-like-button/img/favorite.png"));
         $(event.currentTarget).removeClass("like-button_not-active-color");
-        $(event.currentTarget.lastChild).removeClass("like-button__number_not-active-color");
+        $(event.currentTarget.lastElementChild).removeClass("like-button__number_not-active-color");
     }
 else{
-        $(event.currentTarget.firstChild).attr("src", "./src/modules/all-button/mixin-like-button/img/favorite_border.png");
+        $(event.currentTarget.firstElementChild).attr("src", require("/modules/all-button/mixin-like-button/img/favorite_border.png"));
         $(event.currentTarget).addClass("like-button_not-active-color");
-        $(event.currentTarget.lastChild).addClass("like-button__number_not-active-color");
+        $(event.currentTarget.lastElementChild).addClass("like-button__number_not-active-color");
     }
 }
 

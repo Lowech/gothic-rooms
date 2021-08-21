@@ -56,7 +56,7 @@ import  $ from 'jquery'// подключение к файлу библиоте�
   maxNumber.innerHTML=settings.amount;
   numberSlider.append(numberColorGreen);
   numberColorGreen.append(imgButtonArrow);
-  imgButtonArrow.setAttribute('src','../src/modules/pagination/img/arrow_forward_white.png' );
+  imgButtonArrow.setAttribute('src', require("/modules/pagination/img/arrow_forward_white.png"));
   imgButtonArrow.setAttribute('alt','img');
 
   paginationText.innerHTML="1 – 12 из 100+ вариантов аренды";

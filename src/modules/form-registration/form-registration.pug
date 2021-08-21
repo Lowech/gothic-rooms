@@ -16,7 +16,7 @@ form.form-registration-wrapper
       +radio-buttons("Женщина", "woman","woman")(class="radio-buttons ")
     div.input-date-wrapper
       label.input-date__label(for="") дата рождения
-        +input-wide-field("number" , "ДД.ММ.ГГГГ")(class="input-wide-field input-wide-field_margin-top")
+        +input-wide-field("text" , "ДД.ММ.ГГГГ")(class="input-wide-field input-wide-field_margin-top datepicker-here js-input-wide-field")
     div.input-login-wrapper
       label.input-date__label(for="") данные для входа в сервис
         +input-wide-field("email" , "Email")(class="input-wide-field input-wide-field_margin-top")

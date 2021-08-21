@@ -9,10 +9,10 @@ div.number-selection
         h2.number-selection__title Найдём номера под ваши пожелания
       div.number-selection__input-left-wrapper
         label(class="number-selection__label" ) прибытие
-        +date-dropdown("text" , "ДД.ММ.ГГГГ", )( class="date-dropdown"  ) 
+        +date-dropdown("text" , "ДД.ММ.ГГГГ","start")( class="date-dropdown") 
       div.number-selection__input-right-wrapper
         label(class="number-selection__label" ) выезд
-        +date-dropdown("text", "ДД.ММ.ГГГГ", )(class="date-dropdown"  ) 
+        +date-dropdown("text", "ДД.ММ.ГГГГ","end")(class="date-dropdown") 
       div.number-selection__input-lower-wrapper
         label(class="number-selection__label" ) гости
         +dropdown-wide()(class="dropdown-wide_width-more")

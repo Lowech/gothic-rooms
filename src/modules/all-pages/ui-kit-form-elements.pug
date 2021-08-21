@@ -49,19 +49,19 @@ div.ui-kit-form-elements-wrapper
   div.block-wrapper
     include ../toggle/toggle.pug
   div.block-wrapper
-    +like-button("./src/modules/mixin-like-button/img/favorite_border.png", 11)
+    +like-button(require("/modules/all-button/mixin-like-button/img/favorite_border.png"), 11)
   div.block-wrapper
     include ../expandable-checkbox-list/expandable-checkbox-list.pug
   div.block-wrapper
     include ../rich-heckbox-buttons/rich-heckbox-buttons.pug
   div.block-wrapper
-    +room-amenities("src/modules/mixin-room-amenities/img/insert_emoticon.png", "Комфорт","Шумопоглощающие стены")
-    +room-amenities("src/modules/mixin-room-amenities/img/location_city.png", "Комфорт","Шумопоглощающие стены")
+    +room-amenities(require("/modules/mixin-room-amenities/img/insert_emoticon.png"), "Комфорт","Шумопоглощающие стены")
+    +room-amenities(require("/modules/mixin-room-amenities/img/location_city.png"), "Комфорт","Шумопоглощающие стены")
   div.block-wrapper
     +input-narrow-field("email", "Email")(class="narrow-field-block__input narrow-field-block__input_width-more")
   div.block-wrapper
-    +pictures-stars("src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star_border.png")(class="rate-button__img")
-    +pictures-stars("src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png", "src/modules/mixin-pictures-stars/img/star.png")
+    +pictures-stars(require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star_border.png"))(class="rate-button__img")
+    +pictures-stars(require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"), require("/modules/mixin-pictures-stars/img/star.png"))
   div.block-wrapper-width-less
     +dropdown-wide(class="dropdown-wide__table_width-more")
   div.block-wrapper
@@ -79,9 +79,9 @@ div.ui-kit-form-elements-wrapper
 div.ui-kit-components-wraper
   div.room-details-info__reviews-block-grid
     div.reviews__wrapper
-      +user-name-picture("src/modules/mixin-user-name-picture/img/image-user1.png", "Мурад Сарафанов","5 дней назад")
+      +user-name-picture(require("/modules/mixin-user-name-picture/img/image-user1.png"), "Мурад Сарафанов","5 дней назад")
     div.reviews__like-wrapper
-      +like-button("src/modules/all-button/mixin-like-button/img/favorite_border.png", 11)
+      +like-button(require("/modules/all-button/mixin-like-button/img/favorite_border.png"), 11)
     div.reviews__text-wrapper
       +review("Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
   include ../number-selection/number-selection.pug

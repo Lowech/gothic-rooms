@@ -10,7 +10,7 @@ function showBlockArrows(event){
 //функция для левого свайпа
 $('.js-card-slider__arrow-left-block').on("click",shiftsBlockPositionLeft);
 function shiftsBlockPositionLeft(event){
-    let leftBlockPosition=  event.currentTarget.parentNode.firstChild;
+    let leftBlockPosition=  event.currentTarget.parentElement.firstElementChild;
     let parentBlock = event.currentTarget.parentNode
     let WhiteCircle = document.querySelectorAll(".card-slider__cicle_backgroundColor-white")
 
@@ -18,6 +18,7 @@ function shiftsBlockPositionLeft(event){
     for( let item of WhiteCircle){  
     if(parentBlock.contains(item) && item.previousElementSibling.className=='card-slider__cicle')
     {
+        console.log(item.previousElementSibling.classList)
         item.classList.remove("card-slider__cicle_backgroundColor-white");
         item.previousElementSibling.classList.add("card-slider__cicle_backgroundColor-white");
     }
@@ -31,7 +32,7 @@ function shiftsBlockPositionLeft(event){
 //функция для правого свайпа
 $('.js-card-slider__arrow-right-block').on("click",shiftsBlockPositionRight);
 function shiftsBlockPositionRight(event){
-    let leftBlockPosition =  event.currentTarget.parentNode.firstChild;
+    let leftBlockPosition =  event.currentTarget.parentElement.firstElementChild;
     let parentBlock = event.currentTarget.parentNode
     let WhiteCircle = document.querySelectorAll(".card-slider__cicle_backgroundColor-white")
 
@@ -43,7 +44,8 @@ function shiftsBlockPositionRight(event){
         item.nextElementSibling.classList.add("card-slider__cicle_backgroundColor-white");
     }
 }
-    //движение картинок/   
+    //движение картинок/ 
+    console.log(leftBlockPosition)  
     if(leftBlockPosition.offsetLeft>=1085)return;
     leftBlockPosition.style.left = leftBlockPosition.offsetLeft +271+'px';
     leftBlockPosition.style.transition="left 1s";

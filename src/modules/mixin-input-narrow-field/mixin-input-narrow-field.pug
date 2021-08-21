@@ -1,4 +1,5 @@
 mixin input-narrow-field(type, placeholder)
   div.narrow-field-block
     input(class!=attributes.class type=type placeholder=placeholder)
-    button.narrow-field-button(type="submit") <img src="../src/modules/mixin-input-narrow-field/img/arrow-forward.png" alt="img">
+    button.narrow-field-button(type="submit") 
+      img(src=require("/modules/mixin-input-narrow-field/img/arrow-forward.png") alt="img")
