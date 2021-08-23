@@ -225,4 +225,4 @@ function removePenultimateNumber(){
   });
 }
 })(jQuery);
-console.log($(".js-pagination-plagin").pagination({amount:15}));
+$(".js-pagination-plagin").pagination({amount:15});

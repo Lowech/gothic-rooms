@@ -1,6 +1,7 @@
 .dropdown-less
   display: inline-block
   height: 44px
+  position: relative
   &::after
     content: url(../src/modules/dropdown-less/img/expand_more.png)
     position: absolute
@@ -9,6 +10,10 @@
     top: 19px
 //модификация по нажатию/
 .dropdown-less_active::after
+  position: absolute
+  cursor: pointer
+  right: 17px
+  top: 19px
   content: url(../src/modules/dropdown-less/img/expand_more-top.png)
 ///    /
 .dropdown-less__input
@@ -27,6 +32,7 @@
   color: rgba(31, 32, 65, 0.75)
   outline: none
   padding-left: 12px
+  border-radius: 4px
   &::placeholder
     color:  rgba(31, 32, 65, 0.25)
   //стили при открытие таблицы/

@@ -14,8 +14,11 @@
   text-transform: uppercase
   color: #1F2041
   padding-top: 2px
-
-.sum-left,.sum-right
+.range-slider__sum
+  display: flex
+  justify-content: space-around
+  align-items: center
+.sum-min,.sum-max
   display: inline-block
   font:
     family: 'Montserrat' , Arial, sans-serif
@@ -25,6 +28,7 @@
   line-height: 15px
   text-transform: uppercase
   color: rgba(31, 32, 65, 0.5)
+  
 
 .hyphen
   padding:
@@ -35,40 +39,53 @@
   height: 6px
   background: #FFFFFF
   border: 1px solid rgba(31, 32, 65, 0.25)
-  box-sizing: border-box
   border-radius: 3px
   margin-bottom: 13px
-.band-border
-  width: 66px
-  height: 6px
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
-  box-sizing: border-box
-  border-radius: 3px
+  display: flex
   position: relative
+.background-min
+  width: 20px
+  height: 6px
+  background: #FFFFFF
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  border-radius: 3px
   bottom: 1px
+  left: -1px
+  cursor: pointer
+  position: relative
+  z-index: 1
+.background-min__circle
+  position: absolute
+  z-index: 1
+  width: 12px
+  height: 12px
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+  border: 2px solid #FFFFFF
+  border-radius: 10px
+  bottom: -5px
+  left: 15px
   cursor: pointer
 
-.band-border__left
+.backgroun-max
+  width: 66px
+  height: 8px
+  bottom: -1px
+  left: -1px
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+  border-radius: 3px
+  cursor: pointer
+  position: absolute
+.background-max__circle
   position: absolute
   width: 12px
   height: 12px
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
   border: 2px solid #FFFFFF
   border-radius: 10px
-  bottom: -6px
-  cursor: pointer
-
-.band-border__right
-  position: absolute
-  width: 12px
-  height: 12px
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
-  border: 2px solid #FFFFFF
-  border-radius: 10px
-  bottom: -6px
+  top: -4px
   left: 50px
   cursor: pointer
-  
+
 .range-slider-text
   font:
     family: 'Montserrat' , Arial, sans-serif

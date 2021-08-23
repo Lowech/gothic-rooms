@@ -18,7 +18,6 @@ function shiftsBlockPositionLeft(event){
     for( let item of WhiteCircle){  
     if(parentBlock.contains(item) && item.previousElementSibling.className=='card-slider__cicle')
     {
-        console.log(item.previousElementSibling.classList)
         item.classList.remove("card-slider__cicle_backgroundColor-white");
         item.previousElementSibling.classList.add("card-slider__cicle_backgroundColor-white");
     }
@@ -45,7 +44,6 @@ function shiftsBlockPositionRight(event){
     }
 }
     //движение картинок/ 
-    console.log(leftBlockPosition)  
     if(leftBlockPosition.offsetLeft>=1085)return;
     leftBlockPosition.style.left = leftBlockPosition.offsetLeft +271+'px';
     leftBlockPosition.style.transition="left 1s";

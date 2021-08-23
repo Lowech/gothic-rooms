@@ -7,7 +7,6 @@ let numberBathrooms = 0;
 $('.js-dropdown-less').on('click',showTable);
 //открытие /
 function showTable(event){
-    console.log(event.target)
     $('.js-dropdown-less').toggleClass("dropdown-less_active")
     $('.js-dropdown-less__table').toggle();
     $('.js-dropdown-less__input').toggleClass("dropdown-less__input_border-bottom");
