@@ -31,5 +31,4 @@ ctx.strokeStyle = grd3;
 ctx.lineWidth = 5;
 ctx.arc(80,79,71,4.7,(Math.PI/181)*360); 
 ctx.stroke();
-console.log(Math.PI/180*360)
 }

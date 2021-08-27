@@ -1,7 +1,6 @@
 .room-details-wrapper
   max-width: 1920px
   min-width: 320px
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1)
   
 .room-details-background
   display: grid
@@ -32,7 +31,7 @@
 .room-details-info-wrapper
   display: grid
   grid-template-columns: minmax(20px,9%) auto 8%
-  grid-template-rows: 70px auto
+  grid-template-rows: 70px auto 
   
 .room-details-info
   grid-column: 2/3
@@ -66,7 +65,7 @@
 
 .room-details-block
   width: 280px
-  padding-top: 19px
+  padding-top: 20px
   border-bottom: 1px solid rgba(31, 32, 65, 0.1)
 
 .room-details-info__wrapper-impressions-room
@@ -125,7 +124,9 @@
   display: inline-block
   grid-column: 1/2
   grid-row: 2/3
-  padding-left: 6px
+  padding:
+    left: 6px
+    top: 2px
  
 .reviews__text-wrapper
   display: inline-block

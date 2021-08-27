@@ -33,8 +33,8 @@ document.addEventListener("click",function(event){
         $start.blur();
     } 
 })
-var $start1= $('#start'),
-    $end1= $('#end');
+var $start1= $('#start1'),
+    $end1= $('#end1');
 
 $start1.datepicker({
         
